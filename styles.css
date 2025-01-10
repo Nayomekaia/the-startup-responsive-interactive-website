@@ -19,22 +19,52 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    position: absolute;
-  
 }
 
 .menu {
-    display: 
+    display: flex;
     flex-direction: row;
+
 }
 
 main. {
     display: flex;
     flex-direction: column;
+    text-align:  center;
+    justify-content: center;
 }
+
+.main-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third-section-color);
+
+    & img {
+        width: 62px;
+        height: 65px;
+     
+    }
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 2rem;
+}
+
+
 .footer-bottom-icons , img{
     display: flex;
     flex-direction: row;
+    background-color: var(--third-section-color);
+    gap: 10px;
+
+    & img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .goed-slecht {
@@ -45,4 +75,11 @@ main. {
 .service-button {
     display: flex;
     flex-direction: row;
+   
+    & img {
+        width: 45px;
+        height: 45px;
+    }
 }
+
+
