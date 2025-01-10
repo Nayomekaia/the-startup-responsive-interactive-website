@@ -1,0 +1,120 @@
+body {
+
+/* BACKGROUND COLORS*/
+--background-color: #ffffff;
+--primary-section-color: #03776f;
+--secondairy-section-color: #17928d;
+--third-section-color: #dfdfdf;
+--background-color-article: #0386867d;
+
+/*TEXT COLORS*/
+--text-color: #000000;
+--Titels-color: #005f5e;
+--link-text-color: #004c4c;
+--menu-link-text:  #ffffff;
+
+/*BUTTON COLORS*/
+--primary-button-color: #004c4c;
+--primary-buttonp-hover-color: #00a296;
+--primary-click-button-color: #002c2c;
+--secondairy-button-color: #ffd203;
+--secondairy-button-hover-color: #b18c06;
+
+
+/*FONTSIZE*/
+--font-size-header-h1: 32px;
+--font-size-header-h2: 25px;
+--font-size-tekst: 16px;
+
+/*FONTS*/
+--font-family-titles: "Roboto condensed";
+--font-family-text: "Roboto";
+
+--font-weight-text: 400;
+
+/*BUTTON*/
+--button-padding: 10px 20px;
+--button-border: none;
+--button-border-radius: none;
+
+}
+
+
+h1 {
+    font-family: var(--font-family-titles);
+    font-size: var(--font-size-header-h1);
+    color: var(--Titels-color);
+}
+
+h2 {
+    font-family: var(--font-family-titles);
+    font-size: var(--font-size-header-h2);
+    color: var(--Titels-color);
+}
+
+h3{
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-text);
+    color: var(--text-color);
+
+}
+
+p {
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-tekst);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-family-text);
+    color: var(--link-text-color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.menu {
+    color: var(--menu-link-text);
+    background-color: var(--primary-section-color);
+    gap: 10px;
+
+    & a {
+        color: var(--menu-link-text);
+    }
+}
+
+article {
+    background-color: var(--background-color-article);
+
+}
+
+.footer-top {
+    background-color: var(--secondairy-color);
+    padding: 20px;
+    
+}
+
+ button {
+    padding: var(--button-padding);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-tekst);
+    color: var();
+    background-color: var(--secondairy-button-color);
+ }
+
+.logo {
+     width: 129px;
+        height: 40px;
+ }
+
+ 
+
+
+
+/* font-weight nog toevoegen*/
+/* groote icons nog toevoegen/
