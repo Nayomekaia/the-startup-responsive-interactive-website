@@ -1,0 +1,48 @@
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+.header-top { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header-middel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  
+}
+
+.menu {
+    display: 
+    flex-direction: row;
+}
+
+main. {
+    display: flex;
+    flex-direction: column;
+}
+.footer-bottom-icons , img{
+    display: flex;
+    flex-direction: row;
+}
+
+.goed-slecht {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-button {
+    display: flex;
+    flex-direction: row;
+}
