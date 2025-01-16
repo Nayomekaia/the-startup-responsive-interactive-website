@@ -1,12 +1,17 @@
 body {
-   display: flex;
-   flex-direction: column;
+    margin: 0%;
 }
 
 .header-top { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    p { 
+        font-size: var(--font-size-tekst);
+        font-family: var(--font-family-text);
+        color: var(--primary-section-color)
+    }
 
 }
 
@@ -16,14 +21,16 @@ body {
     justify-content: space-between;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-}
-
 .menu {
     display: flex;
     flex-direction: row;
+    font-size: var(--font-size-tekst);
+    font-family: var(--font-family-text);
+    justify-content: space-evenly;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1rem;
+    padding: 1rem;
 
 }
 
@@ -37,9 +44,9 @@ main{
 .main-bottom {
     display: flex;
     flex-direction: column;
-    background-color: var(--third-section-color);
+    background-color: #edf7f7;
 
-    & img {
+    & img  {
         width: 62px;
         height: 65px;
      
@@ -52,34 +59,35 @@ article {
     flex-direction: column;
     padding: 30px;
     margin: 2rem;
-}
-
-
-.footer-bottom-icons , img{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--third-section-color);
-    gap: 10px;
-
-    & img {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-.goed-slecht {
-    display: flex;
-    flex-direction: row;
-}
-
-.service-button {
-    display: flex;
-    flex-direction: row;
+    max-width: 600px;
+    overflow-wrap: break-word;
    
-    & img {
-        width: 45px;
-        height: 45px;
+}
+
+.footer-bottom {
+    text-align: center; 
+    padding: 2rem;
+    background-color: #edf7f7; 
+
+    & a :hover { 
+        text-decoration: underline;
+
     }
 }
+
+.footer-bottom-icons {
+    text-align: center;
+    gap: 10px;
+}
+
+.footer-bottom-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 5px; 
+}
+
+
+
+  
 
 
