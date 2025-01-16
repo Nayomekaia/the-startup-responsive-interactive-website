@@ -65,25 +65,51 @@ article {
 }
 
 .footer-bottom {
-    text-align: center; 
+    display: block; 
+    text-align: center;
     padding: 2rem;
-    background-color: #edf7f7; 
+    background-color: #edf7f7;
 
-    & a :hover { 
-        text-decoration: underline;
+    & a {
+        list-style: none;
+        margin: 1rem 0 1rem 0;
+        justify-content: center;
+        gap: 1rem;
+    }
 
+    a:hover {
+        text-decoration: underline; 
     }
 }
 
+
 .footer-bottom-icons {
-    text-align: center;
-    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+
+    & a {
+        background-color: #9b9b9b;
+    height: 2.1rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    text-decoration: none;
+    
+        &:hover {
+            background-color: #17928C;
+        }
+    }
 }
 
 .footer-bottom-icons img {
     width: 30px;
     height: 30px;
-    margin: 5px; 
 }
 
 
