@@ -158,7 +158,7 @@ article {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #edf7f7;
-    padding: 100px;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -188,6 +188,7 @@ article {
     padding: 10px;
     margin: 10px 0;
     width: 100%;
+
   }
 
   #feedback {
@@ -214,4 +215,5 @@ textarea {
     cursor: pointer;
   }
   
-  
+ 
+
