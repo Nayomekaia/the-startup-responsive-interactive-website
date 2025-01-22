@@ -76,33 +76,13 @@ a {
     }
 }
 
-.menu{
-    color: var(--menu-link-text);
-    background-color: var(--primary-section-color);
-
-    & a {
-        color: var(--menu-link-text);
-    }
-}
 
 article {
     background-color: var(--background-color-article);
 
 }
 
-.footer-top {
-   background-color: var(--secondairy-section-color);
-   padding: 20px;
 
-    h3, p { 
-        color: var(--menu-link-text);
-    }
-
-    a {
-        color: var(--menu-link-text);
-        background-color: var(--primary-section-color) ;
-    }
-} 
 
 
  button {
@@ -118,16 +98,6 @@ article {
      width: 129px;
         height: 40px;
  }
-
- .service-button {
-    display: flex;
-    flex-direction: row;
-   
-    & img {
-        width: 45px;
-        height: 45px;
-    }
-}
 
 
 
