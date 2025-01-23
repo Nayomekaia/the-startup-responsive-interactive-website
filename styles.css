@@ -4,6 +4,28 @@ body {
     margin: 0;
 }
 
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: px 0;
+    padding: 0 20px;
+}
+
+.header-top p {
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-tekst);
+    color: var(--primary-section-color);
+}
+
+.header-middel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
 .header-select {
     display: inline-block;
     width: auto;
@@ -16,14 +38,25 @@ body {
     color: #333;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
 nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 15px 15px;
+    padding: 5px 15px;
     margin: 0;
+    margin-bottom: 50px;
     font-size: 16px;
     background-color: #00726b;
     color: white;
@@ -72,7 +105,6 @@ nav ul {
     width: 100vw;
     left: 0;
     z-index: 1;
-    margin-top: 19px;
     min-height: 50vh;
     padding: 30px;
     font-family: "Roboto Condensed", sans-serif;
@@ -100,6 +132,7 @@ details > summary {
 details > summary:hover,
 details[open] > summary {
     background-color: #029286;
+    width: 50%;
 }
 
 .primary-menu {
@@ -113,8 +146,25 @@ details[open] > summary {
     list-style-type: none;
 }
 
+.secondary-menu a::before {
+    content: "";
+    background-image: url("./ABN-assets/arrow-right.svg");
+    padding-right: 1.5em;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0;
+    transition: .2s all;
+}
+
+.secondary-menu a:hover:before {
+    left: .33em;
+    transition: .1s all;
+}
+
 .secondary-menu li {
+    display: grid;
     margin: 10px;
+    line-height: 20px;
 }
 
 .secondary-menu a {
@@ -124,25 +174,8 @@ details[open] > summary {
 
 .secondary-menu a:hover {
     background-color: #029286;
-}
-
-.header-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.header-top p {
-    font-family: var(--font-family-text);
-    font-size: var(--font-size-tekst);
-    color: var(--primary-section-color);
-}
-
-.header-middel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    width: 70%;
+    border-radius: 5px;
 }
 
 main {
@@ -152,6 +185,11 @@ main {
     justify-content: center;
 }
 
+main p {
+    text-align: center;
+    max-width: 600px;
+}
+
 article {
     display: flex;
     flex-direction: column;
@@ -159,25 +197,37 @@ article {
     margin: 2rem;
     max-width: 600px;
     overflow-wrap: break-word;
+    align-items: center;
+
+    & p {
+        max-width: 600px;
+    }
+}
+
+main, article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .goed-slecht a {
-    display: inline-block; /* Zorg dat de link zich als een knop gedraagt */
-    background-color: #edf7f7; /* Kleur van de tekst */
-    text-decoration: none; /* Verwijder standaard onderlijning */
-    border-radius: 5px; /* Maak de hoeken afgerond */
-    transition: all 0.3s ease; /* Voeg een vloeiende overgang toe */
+    display: inline-block;
+    background-color: #edf7f7;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 
     img {
         width: 62px;
-        height: 65,5px;
+        height: 65.5px;
     }
 }
 
 .goed-slecht a:hover {
-    border: 3px solid #86d1ce; /* Voeg een border toe bij hover */
-    background-color: #d9f0ef; /* Verander de achtergrondkleur bij hover */
-
+    border: 3px solid #86d1ce;
+    background-color: #d9f0ef;
 }
 
 .main-bottom {
@@ -188,9 +238,8 @@ article {
 
     & h3 {
         font-size: 20px;
-        word-wrap: break-word; /* Breek lange woorden af */
-        word-break: break-word; /* Extra ondersteuning voor moderne browsers */
-
+        word-wrap: break-word;
+        word-break: break-word;
     }
 }
 
@@ -199,15 +248,15 @@ article {
     height: 65px;
 }
 
-
 footer {
     display: flex;
     flex-direction: column;
 }
+
 .footer-top {
     padding: 30px;
     color: white;
-    background-color: #17928d;
+    background-color: #157571;
 }
 
 .footer-top h3 {
@@ -225,41 +274,39 @@ footer {
 
 .footer-top .service-button {
     display: flex;
-    align-items: center; /* Zorgt dat de afbeelding en tekst op dezelfde lijn staan */
-    background-color: #0d7775;
-    border-radius: 5px; /* Ronde hoeken zoals bij ABN AMRO */
+    align-items: center;
+    background-color: #095150;
+    border-radius: 5px;
     text-decoration: none;
-    color: white; /* Witte tekst zoals bij ABN AMRO */
+    color: white;
     font-size: 1rem;
     font-weight: bold;
-    gap: 10px; /* Ruimte tussen de afbeelding en tekst */
-    transition: background-color 0.3s; /* Animatie bij hover */
+    gap: 10px;
+    transition: background-color 0.3s;
     cursor: pointer;
 }
 
 .footer-top .service-button:hover {
-    background-color: #005f5e; /* Donkerder groen bij hover */
+    background-color: #013634;
 }
 
 .footer-top .service-button img {
-    width: 45px; /* Stel een consistente breedte in voor de afbeelding */
+    width: 45px;
     height: 45px;
 }
 
 .footer-top .service-button a {
     text-decoration: none;
     color: white;
-    display: inline-block; /* Zorgt dat de link binnen de knop past */
+    display: inline-block;
 }
 
-
-/*footer bottom*/
 .footer-bottom {
     display: flex;
     justify-content: center;
     padding: 2rem;
     background-color: #ecebec;
-    align-items: center; /* Zorgt ervoor dat de items verticaal gecentreerd zijn */
+    align-items: center;
 }
 
 .footer-bottom ul {
@@ -268,40 +315,39 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Laat links naar een nieuwe regel gaan als ze niet passen */
-    max-width: 80%; /* Stel een maximale breedte in */
-    justify-content: center; /* Center de items horizontaal in de ul */
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
 }
 
 .footer-bottom li {
     position: relative;
     margin: 0 10px;
-    word-wrap: break-word; /* Breek lange woorden af */
-    word-break: break-word; /* Extra ondersteuning voor moderne browsers */
+    word-wrap: break-word;
+    word-break: break-word;
     text-align: center;
 }
 
 .footer-bottom li:not(:last-child)::after {
     content: "|";
     margin-left: 10px;
-    color: #02928e;
+    color: #003735;
 }
 
 .footer-bottom a {
     text-decoration: none;
-    color: #02928e;
-    font-size: 14px;
+    color: #003735;
+    font-size: 16px; /* toegankelijkheid vs designkeuze*/
     display: inline-block;
-    max-width: 100%; /* Zorg ervoor dat de links binnen hun container blijven */
-    overflow-wrap: break-word; /* Breek woorden af als ze te lang zijn */
-    word-break: break-word; /* Voorkom horizontale overflow */
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
     text-align: center;
 }
 
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-
 
 .footer-bottom-icons {
     display: flex;
@@ -310,7 +356,7 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color:#ecebec; 
+    background-color: #ecebec;
 }
 
 .footer-bottom-icons a {
@@ -432,16 +478,40 @@ textarea {
     color: #003f3d;
 }
 
-@media screen and (min-width: 700px) {
-    main, article {
-        display: flex;
-        flex-direction: column;
+@media screen and (min-width: 800px) {
+    nav {
         align-items: center;
         justify-content: center;
-        text-align: center;
     }
 
-    main p, article p {
+    h1 {
+        font-size: 3rem;
+
+        & p {
+            font-size: 19px;
+        }
+    }
+
+    main p {
         font-size: 19px;
+    }
+
+    .main-top, article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        & p {
+            font-size: 19px;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .footer-bottom a {
+        font-size: 22px;
     }
 }
