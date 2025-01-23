@@ -337,7 +337,7 @@ footer {
 .footer-bottom a {
     text-decoration: none;
     color: #003735;
-    font-size: 16px; /* toegankelijkheid vs designkeuze*/
+    font-size: 16px; 
     display: inline-block;
     max-width: 100%;
     overflow-wrap: break-word;
@@ -397,16 +397,21 @@ footer {
 
 #feedback-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(deg);
+    padding: 10px 15px;
+    border: 1px solid #5e4a01;
+    height: 150px;
+    border-radius: 5px 0 0 5px;
     cursor: pointer;
-    background-color: var(--primary-section-color);
-    color: white;
+    background-color: #f3c003;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    writing-mode: vertical-lr; 
 }
 
+/* Sterren */
 .star-rating input {
     display: none;
 }
@@ -424,17 +429,21 @@ footer {
     color: var(--primary-section-color);
 }
 
+
 #feedback-form {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    padding: 50px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #edf7f7;
+    width: 90%; 
+    max-width: 700px; 
+
 }
 
 #feedback-form p {
@@ -451,20 +460,15 @@ h4 {
 select, input, textarea {
     font-family: var(--font-family-text);
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 textarea {
-    width: 100%;
-    max-width: 700px;
-    resize: vertical;
+    resize: vertical; 
     overflow-x: hidden;
-}
-
-#feedback {
-    width: 100%;
-    max-width: 600px;
-    height: 100px;
+    height: 120px;
 }
 
 #close-form {
@@ -476,6 +480,24 @@ textarea {
     font-size: 25px;
     cursor: pointer;
     color: #003f3d;
+}
+
+/* Succes Bericht */
+#success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #edf7f7;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    font-family: var(--font-family-text);
+    color: #0d4e4b;
 }
 
 @media screen and (min-width: 800px) {
@@ -515,3 +537,22 @@ textarea {
         font-size: 22px;
     }
 }
+#feedback-form {
+    padding: 40px;
+}
+
+textarea {
+    height: 150px; 
+}
+
+@media (min-width: 1000px) {
+    #feedback-form {
+        width: 60%; 
+        max-width: 800px;
+    }
+
+    #feedback-button {
+        height: 200px;
+    }
+}
+
