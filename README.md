@@ -32,25 +32,26 @@ Feedbackknop zichtbaarheid: De knop stond onderaan en was niet direct zichtbaar.
 Sterrenbeoordeling: De sterrenbeoordeling ging eerst van rechts naar links, wat verwarrend was. Dit is aangepast naar een logische volgorde van links naar rechts.
 Formulier sluiten: Het sluiten van het formulier was niet duidelijk. Nu is er een meer zichtbare sluitknop toegevoegd.
 Bevestiging na verzenden: Een melding verschijnt nu nadat het formulier succesvol is verzonden, zodat gebruikers weten dat hun feedback is ontvangen.
-Ontwerpschetsen
-Een apart onderdeel op de pagina toont de oorspronkelijke schetsen van het ontwerp. Dit laat zien hoe het ontwerp geëvolueerd is naar de uiteindelijke versie.</p>
 
-<h3>Usertest<h3>
+<h3>Ontwerpschetsen</h3>
+
+
+<h3>Usertest</h3>
 <p>Gebruikerstesten bevindingen</p>
 
-<p>Tessa:
-Feedbackknop was niet direct zichtbaar → opvallendere kleur en betere plaatsing toegevoegd.
+<h3>Tessa:</h3>
+<p>Feedbackknop was niet direct zichtbaar → opvallendere kleur en betere plaatsing toegevoegd
 Rating sterren waren onlogisch (rechts naar links) → aangepast naar links naar rechts.
-Formulier sluiten was niet duidelijk → meer prominente sluitknop.
-Tristan (mentor):
+Formulier sluiten was niet duidelijk → meer prominente sluitknop..</p>
 
-Geen duidelijke bevestiging na verzenden → bevestigingsmelding toegevoegd.
-Nazneen (mentor):
+<h3>Tristan (mentor):</h3>
 
-Feedbackknop was niet logisch geplaatst → knop hoger geplaatst en beter zichtbaar gemaakt.
-Scenario was niet helder → scenario verduidelijkt.
-Link naar de live pagina
-Bekijk de live pagina hier.</p>
+<p> Geen duidelijke bevestiging na verzenden → bevestigingsmelding toegevoegd.</p>
+
+<h3>Nazneen (mentor):</h3>
+ 
+<p>Feedbackknop was niet logisch geplaatst → knop hoger geplaatst en beter zichtbaar gemaakt.
+Scenario was niet helder → scenario verduidelijkt.</p>
 
 
 <h2>Kenmerken <h2>
