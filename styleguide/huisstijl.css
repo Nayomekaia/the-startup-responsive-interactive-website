@@ -1,68 +1,62 @@
-body {
+/* Algemene kleurinstellingen */
+:root {
+    --background-color: #ffffff;
+    --primary-section-color: #03776f;
+    --secondary-section-color: #17928d;
+    --tertiary-section-color: #dfdfdf;
+    --background-color-article: #0386867d;
 
-/* BACKGROUND COLORS*/
---background-color: #ffffff;
---primary-section-color: #03776f;
---secondairy-section-color: #17928d;
---third-section-color: #dfdfdf;
---background-color-article: #0386867d;
+    /* Tekstkleuren */
+    --text-color: #000000;
+    --title-color: #005f5e;
+    --link-text-color: #004c4c;
+    --menu-link-text-color: #ffffff;
 
-/*TEXT COLORS*/
---text-color: #000000;
---Titels-color: #005f5e;
---link-text-color: #004c4c;
---menu-link-text:  #ffffff;
+    /* Button kleuren */
+    --primary-button-color: #004c4c;
+    --primary-button-hover-color: #00a296;
+    --primary-click-button-color: #002c2c;
+    --secondary-button-color: #f3c003;
+    --secondary-button-hover-color: #b18c06;
 
-/*BUTTON COLORS*/
---primary-button-color: #004c4c;
---primary-buttonp-hover-color: #00a296;
---primary-click-button-color: #002c2c;
---secondairy-button-color: #ffd203;
---secondairy-button-hover-color: #b18c06;
+    /* Fontgroottes */
+    --font-size-header-large: 32px;
+    --font-size-header-medium: 25px;
+    --font-size-text: 16px;
 
+    /* Lettertypes */
+    --font-family-titles: "Roboto condensed";
+    --font-family-text: "Roboto";
 
-/*FONTSIZE*/
---font-size-header-h1: 32px;
---font-size-header-h2: 25px;
---font-size-tekst: 16px;
-
-/*FONTS*/
---font-family-titles: "Roboto condensed";
---font-family-text: "Roboto";
-
-
-
-/*BUTTON*/
---button-padding: 10px 20px;
---button-border: none;
---button-border-radius: none;
-
+    /* Button instellingen */
+    --button-padding: 10px 20px;
+    --button-border: none;
+    --button-border-radius: 5px; /* Maak de hoeken van de knop afgerond */
 }
 
-
+/* Algemene stijl voor titels */
 h1 {
     font-family: var(--font-family-titles);
-    font-size: var(--font-size-header-h1);
-    color: var(--Titels-color);
+    font-size: var(--font-size-header-large);
+    color: var(--title-color);
 }
 
 h2 {
     font-family: var(--font-family-titles);
-    font-size: var(--font-size-header-h2);
-    color: var(--Titels-color);
+    font-size: var(--font-size-header-medium);
+    color: var(--title-color);
 }
 
-h3{
+h3 {
     font-family: var(--font-family-text);
     font-size: var(--font-size-text);
-    font-weight: var(--font-weight-text);
+    font-weight: normal;
     color: var(--text-color);
-
 }
 
 p {
     font-family: var(--font-family-text);
-    font-size: var(--font-size-tekst);
+    font-size: var(--font-size-text);
     color: var(--text-color);
 }
 
@@ -76,33 +70,204 @@ a {
     }
 }
 
-
+/* Stijlen voor artikelen */
 article {
     background-color: var(--background-color-article);
-
+    padding: 20px;
+    border-radius: 8px;
 }
 
-
-
-
- button {
+/* Stijlen voor knoppen */
+button {
     padding: var(--button-padding);
     border: var(--button-border);
     border-radius: var(--button-border-radius);
     font-family: var(--font-family-text);
-    font-size: var(--font-size-tekst);
-    background-color: var(--secondairy-button-color);
- }
+    font-size: var(--font-size-text);
+    background-color: var(--secondary-button-color);
+    color: #000000;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: var(--secondary-button-hover-color);
+}
+
+/* Logo-stijl */
 .logo {
-     width: 129px;
-        height: 40px;
- }
+    width: 129px;
+    height: 40px;
+}
 
+* Footer instellingen */
+footer {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer-top {
+    padding: 30px;
+    color: white;
+    background-color: var(--primary-section-color);
+}
 
+.footer-top h3 {
+    font-family: var(--font-family-titles);
+    font-size: var(--font-size-header-medium);
+    color: white;
+}
 
+.footer-top p {
+    color: white;
+    font-size: var(--font-size-text);
+    text-align: left;
+}
 
+/* Footer-knop */
+.footer-top .service-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-button-color);
+    border-radius: var(--button-border-radius);
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
 
-/* font-weight nog toevoegen*/
-/* groote icons nog toevoegen/
+.footer-top .service-button:hover {
+    background-color: #013634;
+}
+
+.footer-top .service-button img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Footer links */
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--tertiary-section-color);
+    align-items: center;
+}
+
+.footer-bottom ul {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+}
+
+.footer-bottom li {
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.footer-bottom li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #003735;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #003735;
+    font-size: 22px;
+    display: inline-block;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Footer social icons */
+.footer-bottom-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ecebec;
+}
+
+.footer-bottom-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2px;
+    background-color: #b6b6b6;
+    color: var(--primary-section-color);
+    text-decoration: none;
+}
+
+.footer-bottom-icons a:hover {
+    background-color: var(--secondary-section-color);
+}
+
+.footer-bottom-icons img {
+    width: 20px;
+    height: 30px;
+}
+
+/* Extra styling voor specifieke elementen (feedback formulier bijvoorbeeld) */
+#feedback-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    background-color: var(--primary-section-color);
+    color: white;
+}
+
+/* Stijl voor het sterbeoordelingssysteem */
+.star-rating .star {
+    font-size: 40px;
+    cursor: pointer;
+    color: #0d66626d;
+}
+
+.star:hover,
+.star-rating input:checked ~ .star {
+    color: var(--primary-section-color);
+}
+
+/* Responsive stijlen voor grotere schermen */
+@media screen and (min-width: 800px) {
+    nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    main p {
+        font-size: 19px;
+    }
+
+    .main-top,
+    article {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
