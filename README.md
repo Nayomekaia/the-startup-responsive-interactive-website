@@ -54,14 +54,14 @@ Bekijk de live pagina hier.</p>
 
 
 <h2>Kenmerken <h2>
-<p>HTML
-Semantische structuur: Gebruik van header, nav, section, en footer voor toegankelijkheid en overzichtelijkheid.
-Dynamisch gegenereerde elementen zoals het feedbackformulier.
-CSS
-Mobile-first design: Gebruik van flexbox en media queries voor een responsieve layout.
-Huisstijl van ABN AMRO toegepast: kleurenpalet, lettertypes en marges zijn consistent.
-JavaScript
-Interactie voor de feedbackknop: Het formulier verschijnt en verdwijnt dynamisch bij klikken.
+<h3>HTML</h3>
+<p>Semantische structuur: Gebruik van header, nav, section, en footer voor toegankelijkheid en overzichtelijkheid.
+Dynamisch gegenereerde elementen zoals het feedbackformulier.</p>
+<h3>CSS</h3>
+<p>Mobile-first design: Gebruik van flexbox en media queries voor een responsieve layout.
+Huisstijl van ABN AMRO toegepast: kleurenpalet, lettertypes en marges zijn consistent.</p>
+<h3>JavaScript</h3>
+<p>Interactie voor de feedbackknop: Het formulier verschijnt en verdwijnt dynamisch bij klikken.
 Sterrenbeoordeling: Logica toegevoegd voor interactie met de beoordelingssterren.
 Bevestigingsmelding: Feedback over het succesvol versturen van het formulier.
 Codeconventies
