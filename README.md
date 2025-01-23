@@ -1,23 +1,23 @@
-<h1>ABN AMRO Toegankelijkheid Verklaring Pagina<h1>
+<h1>ABN AMRO Toegankelijkheid Verklaring Pagina</h1>
 
-Dit project is een toegankelijkheidsverklaring webpagina ontworpen in de huisstijl van ABN AMRO. De webpagina is mobile-first gebouwd met twee breakpoints op min-width 800px en min-width 1000px, en bevat meerdere interactieve elementen zoals een feedbackknop en een tweede navigatiemenu met hover-effecten.
+<p>Dit project is een toegankelijkheidsverklaring webpagina ontworpen in de huisstijl van ABN AMRO. De webpagina is mobile-first gebouwd met twee breakpoints op min-width 800px en min-width 1000px, en bevat meerdere interactieve elementen zoals een feedbackknop en een tweede navigatiemenu met hover-effecten.</p>
 
-<h2>Beschrijving<h2>
-De webpagina is een toegankelijkheidsverklaring waarbij gebruikers informatie kunnen vinden over de toegankelijkheid van de ABN AMRO website. Daarnaast biedt de pagina een feedbackknop waarmee gebruikers een formulier kunnen invullen om feedback te geven.
+<h2>Beschrijving</h2>
+<p>De webpagina is een toegankelijkheidsverklaring waarbij gebruikers informatie kunnen vinden over de toegankelijkheid van de ABN AMRO website. Daarnaast biedt de pagina een feedbackknop waarmee gebruikers een formulier kunnen invullen om feedback te geven.</p>
 
-<h3>Belangrijkste functies:<h3>
-Secundair menu met hover-indicatie: Als je met de muis over een menu-item gaat, verschijnt er een pijltje om duidelijk te maken welk item geselecteerd is.
+<h3>Belangrijkste functies:</h3>
+<p>Secundair menu met hover-indicatie: Als je met de muis over een menu-item gaat, verschijnt er een pijltje om duidelijk te maken welk item geselecteerd is.
 Feedbackknop: Bij het klikken op de feedbackknop verschijnt er een formulier. Gebruikers kunnen dit formulier invullen en versturen of het formulier sluiten door op een kruisje te klikken.
-De website is volledig responsive en ontworpen met een mobile-first aanpak. De belangrijkste interacties en ontwerpen zijn geoptimaliseerd voor gebruiksvriendelijkheid, inclusief verbeteringen gebaseerd op gebruikerstesten.
+De website is volledig responsive en ontworpen met een mobile-first aanpak. De belangrijkste interacties en ontwerpen zijn geoptimaliseerd voor gebruiksvriendelijkheid, inclusief verbeteringen gebaseerd op gebruikerstesten.</p>
 
-<h2>Responsive Design<h2>
-De webpagina past zich aan verschillende schermgroottes aan met behulp van een mobile-first aanpak en de volgende breakpoints:
+<h2>Responsive Design</h2>
+<p>De webpagina past zich aan verschillende schermgroottes aan met behulp van een mobile-first aanpak en de volgende breakpoints:</p>
 
-Mobiel (tot 800px): Compact ontwerp met focus op leesbaarheid en eenvoudig navigeren.
+<p>Mobiel (tot 800px): Compact ontwerp met focus op leesbaarheid en eenvoudig navigeren.
 Tablet (800px - 999px): De layout wordt iets breder, en elementen worden overzichtelijker gepresenteerd.
 Desktop (1000px en hoger): Volledig uitgebreide layout met extra ruimte voor inhoud.
 Screenshots per breakpoint:
-(Screenshots van de mobiele, tablet- en desktopversie toevoegen.)
+(Screenshots van de mobiele, tablet- en desktopversie toevoegen.)</p>
 
 <h2>Ontwerpkeuzes<h2>
 
