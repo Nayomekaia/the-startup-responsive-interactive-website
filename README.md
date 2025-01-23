@@ -19,10 +19,10 @@ Desktop (1000px en hoger): Volledig uitgebreide layout met extra ruimte voor inh
 Screenshots per breakpoint:
 (Screenshots van de mobiele, tablet- en desktopversie toevoegen.)</p>
 
-<h2>Ontwerpkeuzes<h2>
+<h2>Ontwerpkeuzes</h2>
 
-<h3> Interacties <h3>
-Secundair menu met hover-indicatie
+<h3> Interacties </h3>
+<p>Secundair menu met hover-indicatie
 Waarom: Om duidelijk te maken welk menu-item geselecteerd is, wordt er een visuele indicatie gegeven in de vorm van een pijltje dat naar voren schuift bij hover.
 Feedback & feedforward: De visuele indicatie biedt feedback aan de gebruiker dat een item actief is. Het pijltje dat naar voren beweegt geeft een vorm van feedforward doordat het aangeeft dat dit menu-item aanklikbaar is.
 Feedbackknop en formulier
@@ -33,12 +33,12 @@ Sterrenbeoordeling: De sterrenbeoordeling ging eerst van rechts naar links, wat 
 Formulier sluiten: Het sluiten van het formulier was niet duidelijk. Nu is er een meer zichtbare sluitknop toegevoegd.
 Bevestiging na verzenden: Een melding verschijnt nu nadat het formulier succesvol is verzonden, zodat gebruikers weten dat hun feedback is ontvangen.
 Ontwerpschetsen
-Een apart onderdeel op de pagina toont de oorspronkelijke schetsen van het ontwerp. Dit laat zien hoe het ontwerp geëvolueerd is naar de uiteindelijke versie.
+Een apart onderdeel op de pagina toont de oorspronkelijke schetsen van het ontwerp. Dit laat zien hoe het ontwerp geëvolueerd is naar de uiteindelijke versie.</p>
 
 <h3>Usertest<h3>
-Gebruikerstesten bevindingen
+<p>Gebruikerstesten bevindingen</p>
 
-Tessa:
+<p>Tessa:
 Feedbackknop was niet direct zichtbaar → opvallendere kleur en betere plaatsing toegevoegd.
 Rating sterren waren onlogisch (rechts naar links) → aangepast naar links naar rechts.
 Formulier sluiten was niet duidelijk → meer prominente sluitknop.
@@ -50,12 +50,12 @@ Nazneen (mentor):
 Feedbackknop was niet logisch geplaatst → knop hoger geplaatst en beter zichtbaar gemaakt.
 Scenario was niet helder → scenario verduidelijkt.
 Link naar de live pagina
-Bekijk de live pagina hier.
+Bekijk de live pagina hier.</p>
 
 
 <h2>Kenmerken <h2>
-HTML
-Semantische structuur: Gebruik van <header>, <nav>, <section>, en <footer> voor toegankelijkheid en overzichtelijkheid.
+<p>HTML
+Semantische structuur: Gebruik van header, nav, section, en footer voor toegankelijkheid en overzichtelijkheid.
 Dynamisch gegenereerde elementen zoals het feedbackformulier.
 CSS
 Mobile-first design: Gebruik van flexbox en media queries voor een responsieve layout.
@@ -65,6 +65,6 @@ Interactie voor de feedbackknop: Het formulier verschijnt en verdwijnt dynamisch
 Sterrenbeoordeling: Logica toegevoegd voor interactie met de beoordelingssterren.
 Bevestigingsmelding: Feedback over het succesvol versturen van het formulier.
 Codeconventies
-Geoptimaliseerde en gestructureerde code met duidelijke classnamen en consistent gebruik van variabelen.
+Geoptimaliseerde en gestructureerde code met duidelijke classnamen en consistent gebruik van variabelen.</p>
 
 <a>https://nayomekaia.github.io/the-startup-responsive-interactive-website/<a>
