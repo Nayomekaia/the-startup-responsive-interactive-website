@@ -67,4 +67,6 @@ Bevestigingsmelding: Feedback over het succesvol versturen van het formulier.
 Codeconventies
 Geoptimaliseerde en gestructureerde code met duidelijke classnamen en consistent gebruik van variabelen.</p>
 
+<p>Check it out !</p>
+
 <a>https://nayomekaia.github.io/the-startup-responsive-interactive-website/<a>
