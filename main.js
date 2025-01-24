@@ -36,21 +36,21 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Bedankt voor jouw feedback!');
       }, 300); // Wacht 300ms om de sluiting van het formulier visueel af te ronden
 
-      feedbackForm.reset(); // Optioneel: reset het formulier na het versturen
+      feedbackForm.reset(); 
     });
   }
+}
 
   // Stap 1: Selecteer de knoppen en containers voor het menu
   const buttons = {
     products: document.getElementById('products-button'),
     onderneming: document.getElementById('uw-onderneming'),
-    app: document.getElementById('app-en-internet-bankieren') // Nieuwe knop
+    app: document.getElementById('app-en-internet-bankieren')
   };
   const containers = {
     productenMenu: document.getElementById('producten-menu'),
     ondernemingMenu: document.getElementById('onderneming-menu'),
-    appMenu: document.getElementById('app-menu') // Nieuwe container
-  };
+    appMenu: document.getElementById('app-menu') 
 
   // Stap 2: Controleer of de benodigde elementen bestaan
   if (
