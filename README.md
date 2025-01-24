@@ -19,9 +19,12 @@ Desktop (1000px en hoger): Volledig uitgebreide layout met extra ruimte voor inh
 Screenshots per breakpoint:
 (Screenshots van de mobiele, tablet- en desktopversie toevoegen.)</p>
 
- <img src="./readme-assets/mobile.png">
-  <img src="./readme-assets/tablet.png">
-   <img src="./readme-assets/desktop.png">
+<p> Mobile version </p>
+ <img src="./readme-assets/mobile.png" height="350">
+ <p> Tablet version</p>
+  <img src="./readme-assets/tablet.png" height="350">
+   <p> desktop version </p>
+   <img src="./readme-assets/desktop.png" height="350">
    
 <h2>Ontwerpkeuzes</h2>
 
