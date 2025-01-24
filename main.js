@@ -23,6 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
         feedbackForm.classList.add('hidden');
       }
     });
+
+    // Voeg een alert toe bij het versturen van het formulier
+    feedbackForm.addEventListener('submit', (event) => {
+      event.preventDefault(); // Voorkom standaard versturen
+      
+      // Sluit het formulier
+      feedbackForm.classList.add('hidden');
+
+      // Wacht even tot het formulier sluit, dan toon de alert
+      setTimeout(() => {
+        alert('Bedankt voor jouw feedback!');
+      }, 300); // Wacht 300ms om de sluiting van het formulier visueel af te ronden
+
+      feedbackForm.reset(); // Optioneel: reset het formulier na het versturen
+    });
   }
 
   // Stap 1: Selecteer de knoppen en containers voor het menu
@@ -105,3 +120,4 @@ document.addEventListener('DOMContentLoaded', () => {
     containers.ondernemingMenu
   ]);
 });
+

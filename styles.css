@@ -417,7 +417,7 @@ footer {
 }
 
 .star-rating .star {
-    font-size: 40px;
+    border-radius: 10px;
     cursor: pointer;
     transition: color 0.3s;
     margin-right: 5px;
@@ -438,7 +438,7 @@ footer {
     z-index: 1000;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #edf7f7;
     width: 90%; 
@@ -482,23 +482,6 @@ textarea {
     color: #003f3d;
 }
 
-/* Succes Bericht */
-#success-message {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #edf7f7;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    font-family: var(--font-family-text);
-    color: #0d4e4b;
-}
 
 @media screen and (min-width: 800px) {
     nav {
@@ -545,14 +528,47 @@ textarea {
     height: 150px; 
 }
 
+
 @media (min-width: 1000px) {
-    #feedback-form {
-        width: 60%; 
-        max-width: 800px;
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background-color: #ecebeca8;
     }
 
-    #feedback-button {
-        height: 200px;
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 150px;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+    
+    #feedback-form {
+        width: 100%;
+        max-width: 600px;
+        padding: 40px;
+        margin: 0 auto;
+        border-radius: 8px;
+        background-color: #edf7f7;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    #feedback-form p,
+    #feedback-form select,
+    #feedback-form input,
+    #feedback-form textarea {
+        margin: 20px 0;
+    }
+    
+
+    
+    
 }
 
