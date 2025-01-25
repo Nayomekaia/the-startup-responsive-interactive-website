@@ -1,671 +1,714 @@
-<!DOCTYPE html>
+
 <html lang="nl">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Toegankelijkheidsverklaring</title>
-        <link rel="stylesheet" href="./styleguide/huisstijl.css">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toegankelijkheidsverklaring</title>
+    <link rel="stylesheet" href="./styleguide/huisstijl.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        <header>
-                <section class="header-top">
-                        <p> NL | EN </p>
-                        <label for="keuze" class="sr-only">Kies een optie:</label>
-                        <select id="keuze" class="header-select">
-                                <option value="" disabled selected class="sr-only">Kies een optie</option>
-                                <option value="zakelijk" label="zakelijk">Zakelijk</option>
-                                <option value="prive" label="prive">Prive</option>
-                                <option value="prive-banking" label="prive banking">Prive Banking</option>
-                        </select>
+    <header>
+        <section class="header-top">
+                <p>NL | EN</p>
+                <label for="keuze" class="sr-only">Kies een optie:</label>
+                <select id="keuze" class="header-select">
+                    <option value="" disabled selected class="sr-only">Kies een optie</option>
+                    <option value="zakelijk" label="zakelijk">Zakelijk</option>
+                    <option value="prive" label="prive">Prive</option>
+                    <option value="prive-banking" label="prive banking">Prive Banking</option>
+                </select>
+            </section>
+
+            <section class="header-middel">
+                <img src="./ABN-assets /abn.svg" class="logo" alt="Logo van ABN AMRO">
+                <button class="inloggen">Inloggen</button>
+            </section>
+
+        <nav>
+            <ul>
+                <li class="main-menu">
+                    <a id="home" href="https://www.abnamro.nl/nl/zakelijk/index.html" class="button">Home</a>
+                    <a id="products-button" class="button"> Producten </a>
+                    <div id="producten-menu" class="hidden">
+                        <details>
+                            <summary class="primary-menu"> Betalen & sparen </summary>
+                            <ul class="secondary-menu">
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/index.html"> Zakelijke rekening openen </a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/extra-zakelijke-rekening.html">Extra rekening openen</a></li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/spaarrekening.html"> Spaarrekening openen </a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/vreemde-valuta-rekening/index.html"> Vreemde Valuta rekening openen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html"> Boekhouden met ABN AMRO</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/tikkie-zakelijk/index.html"> Tikkie voor bedrijven</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/winkels-en-webshops/buckaroo/betaaloplossingen.html"> Pin- en online betaalmethoden</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/zakelijke-rekening-opzeggen.html"> Zakelijke rekening opzeggen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/kosten-en-tarieven.html">Kosten en tarieven</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/rente/renteontwikkelingen/basisrentetarieven.html"> Basisrentetarieven</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/sepa/incasso/index.html"> SEPA incasso</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/contant-geld/index.html"> Contant geld</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/boekhoudkoppeling/index.html"> Boekhoudkoppeling</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/e.dentifier/aanvragen.html">E.dentifier aanvragen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/winkels-en-webshops/index.html">Winkels en webshops</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/vreemde-valuta-rekening/index.html"> Vreemde Valuta rekening openen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html"> Boekhouden met ABN AMRO</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/tikkie-zakelijk/index.html"> Tikkie voor bedrijven</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/winkels-en-webshops/buckaroo/betaaloplossingen.html"> Pin- en online betaalmethoden</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/zakelijke-rekening-opzeggen.html">Zakelijke rekening opzeggen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/kosten-en-tarieven.html">Kosten en tarieven</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/rente/renteontwikkelingen/basisrentetarieven.html"> Basisrentetarieven</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/sepa/incasso/index.html"> SEPA incasso</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/contant-geld/index.html"> Contant geld</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/boekhoudkoppeling/index.html"> Boekhoudkoppeling</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/e.dentifier/aanvragen.html">E.dentifier aanvragen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/winkels-en-webshops/index.html">Winkels en webshops</a> </li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary class="primary-menu"> Passen & creditcards </summary>
+                            <ul class="secondary-menu">
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Betaalpas-aanvragen.html">Betaalpas
+                                        aanvragen</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/creditcards/index.html">
+                                        Creditcard aanvragen </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/access-card/index.html">
+                                        Acces Card aanvragen </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Activeren/Telefonisch.html">
+                                        Betaalpas activeren</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Zakelijke-betaalpas-blokkeren.html">
+                                        Betaalpas blokkeren</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Zakelijke-betaalpas-blokkeren.html">
+                                        Creditcard blokkeren</a> </li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary class="primary-menu"> Financieren </summary>
+                            <ul class="secondary-menu">
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/index.html">
+                                        Alles over Financieren </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijke-lening/index.html">
+                                        Zakelijke lening </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijk-krediet/index.html">
+                                        Zakelijk krediet </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijke-hypotheek/index.html">
+                                        Zakelijke hypotheek</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/alle-financieringen/zakelijke-lease/index.html">
+                                        Zakelijke lease</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/sectoren/index.html">
+                                        Financieringen per sector</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/alle-financieringen/index.html">
+                                        Alle Financieringen</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/financieringsgesprek/index.html">
+                                        Financieringsgesprek</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/leendoelen/index.html">Waarvoor
+                                        wilt u lenen?</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/ondernemerskrediet-stopt/index.html">
+                                        OndernemersKrediet stopt</a> </li>
+                                <li> <a
+                                        href="https://new10.com/abnamro?nt_source=abnamro&nt_medium=referral&nt_campaign=coop&nt_content=nav_producten_financieren&_gl=1*ql1ecj*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2MzgyNy4wLjAuMA..">
+                                        New10</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kredietproces/index.html">
+                                        Kredietproces</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/gedragscode-kleinzakelijke-financiering.html">
+                                        Gedragscode Kleinzakelijke Financieren</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/lenen-starter.html">Lenen
+                                        als starter</a> </li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary class="primary-menu"> Verzekeren </summary>
+                            <ul class="secondary-menu">
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/verzekeren/index.html">ABN
+                                        AMRO Vezekeringen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/verzekeren/index.html">
+                                        Ondernemersrisico's verzekeren</a> </li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary class="primary-menu"> Internationaal </summary>
+                            <ul class="secondary-menu">
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/trade-finance/index.html">
+                                        Trade Finance </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/trade-finance/garanties/index.html">
+                                        Zakelijke bankgarantie</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/index.html">
+                                        Internationale betalingen </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/valutamanagement.html">
+                                        Valutamanagement</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/vreemde-valuta-rekening/index.html">
+                                        Vreemde Valuta rekening</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/internationaal-ondernemen/index.html">
+                                        Internationaal ondernemen</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/valutacentrum/index.html">
+                                        Valutacentrum</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/international-desks/index.html">
+                                        Kantoren in het buitenland</a> </li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary class="primary-menu"> Cybersecurity </summary>
+                            <ul class="secondary-menu">
+                                <li> <a href="https://www.abnamro.nl/nl/prive/abnamro/veilig-bankieren/index.html">
+                                        Fraude melden </a> </li>
+                                <li> <a
+                                        href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/cyber-veilig-en-zeker/?_gl=1*1srkv6y*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDIxMC4wLjAuMA..">
+                                        Complete cyberbescherming</a> </li>
+                                <li> <a
+                                        href="https://www.abnamroverzekeringen.nl/zakelijk/verzekeringen/cyber?utm_source=abnamro.nl&utm_medium=referral&utm_campaign=verzekeren&utm_content=topnavigatie">
+                                        Zakelijke cyberverzekering </a> </li>
+                                <li> <a
+                                        href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/cyber-risicoscan/?_gl=1*jwwg4g*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDI0MS4wLjAuMA..">
+                                        Doe de cyberrisicoscan</a> </li>
+                                <li> <a
+                                        href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/veilig-ondernemen/download-cyber-response-plan/?_gl=1*1tzcc0l*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDI1NS4wLjAuMA..">
+                                        Maak Cyber Response Plan</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index.html">
+                                        Alles over veilig zakendoen</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/beveiliging/index.html">
+                                        Cyberveiligheid </a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/media/belangrijkste_cybersecuritybedreigingen_tcm16-78700.pdf">
+                                        Top 10 cyberdreigingen</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/cyberaanval/index.html">
+                                        Cuberaanvallen</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/phishing/index.html">
+                                        Cyberdreiging phishing</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/technologie/index.html">
+                                        Technologie & cyber</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/index.html"> Ga naar alle
+                                        artikelen </a> </li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary class="primary-menu"> De Zaak van Nu </summary>
+                            <ul class="secondary-menu">
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/index.html"> Duurzaam ondernemen</a>
+                                </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/index.html"> Social impact
+                                    </a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/circulair.html"> Circulaire
+                                        economie</a> </li>
+                                <li> <a
+                                        href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/vastgoed-verduurzamen/">
+                                        Vastgoed verduurzamen</a> </li>
+                                <li> <a
+                                        href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/subsidie-expertise.html">
+                                        Subsidie Expertise</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/index.html"> Zakelijk
+                                        beleggen</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/coronavirus/de-zaak-vooruit.html">
+                                        Overzicht</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/embedded-finance/index.html"> Embedded
+                                        Finance </a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html">
+                                        Boekhouden met ABN AMRO</a> </li>
+                                <li> <a
+                                        href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/cyber-veilig-en-zeker/?_gl=1*13q9syk*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDYxMy4wLjAuMA..">
+                                        Cyber Veilig & Zeker</a> </li>
+                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/api/index.html"> API's</a> </li>
+                            </ul>
+                        </details>
+                    </div>
 
 
 
-                </section>
+                    <a id="uw-onderneming" class="button"> Uw Onderneming </a>
+                    <div id="onderneming-menu" class="hidden">
 
-                <section class="header-middel">
-                        <img src="./ABN-assets /abn.svg" class="logo" alt="Logo van ABN AMRO">
-                        <button class="inloggen">Inloggen</button>
-                </section>
-
-                <nav>
                         <ul>
-                                <li class="main-menu">
-                                        <a id="home" href="https://www.abnamro.nl/nl/zakelijk/index.html"
-                                                class="button">Home</a>
-                                        <a id="products-button" class="button"> Producten </a>
-                                        <div id="producten-menu" class="hidden">
-                                                <details>
-                                                        <summary class="primary-menu"> Betalen & sparen </summary>
-                                                        <ul class="secondary-menu">
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/index.html">
-                                                                                Zakelijke rekening openen </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/extra-zakelijke-rekening.html">Extra
-                                                                                rekening openen</a></li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/spaarrekening.html">
-                                                                                Spaarrekening openen </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/vreemde-valuta-rekening/index.html">
-                                                                                Vreemde Valuta rekening openen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html">
-                                                                                Boekhouden met ABN AMRO</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/tikkie-zakelijk/index.html">
-                                                                                Tikkie voor bedrijven</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/winkels-en-webshops/buckaroo/betaaloplossingen.html">
-                                                                                Pin- en online betaalmethoden</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/zakelijke-rekening-opzeggen.html">
-                                                                                Zakelijke rekening opzeggen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/kosten-en-tarieven.html">Kosten
-                                                                                en tarieven</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/rente/renteontwikkelingen/basisrentetarieven.html">
-                                                                                Basisrentetarieven</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/sepa/incasso/index.html">
-                                                                                SEPA incasso</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/contant-geld/index.html">
-                                                                                Contant geld</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/boekhoudkoppeling/index.html">
-                                                                                Boekhoudkoppeling</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/e.dentifier/aanvragen.html">E.dentifier
-                                                                                aanvragen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/winkels-en-webshops/index.html">Winkels
-                                                                                en webshops</a> </li>
+                            <details>
+                                <summary class="primary-menu"> Starters </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/eigen-bedrijf-starten/index.html?pos=nav_zakelijk_starter_index">
+                                            Alles voor starters</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/lenen-starter.html?pos=nav_zakelijk_starter_fin_lenen">
+                                            Lenen</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav_zakelijk_starter_boek_index">
+                                            Boekhouden</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/eigen-bedrijf-starten/speciaal-voor-starters.html?pos=nav_zakelijk_starter_product">
+                                            Alle Producten</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/bedrijf-starten.html?pos=nav_zakelijk_starter_starterstips">
+                                            Tips voor starters</a> </li>
+                                    <li> <a
+                                            href="https://doorpakken.abnamro.nl/wegwijzer-voor-starters/?state=step&index=0">
+                                            Wegwijzer voor starters</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html?pos=nav_zakelijk_starter_sectoren">
+                                            Inzichten in uw sector </a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/index.html?pos=nav_zakelijk_starter_zk_rekening">
+                                            zakelijke rekeningen</a> </li>
+                                </ul>
+                            </details>
 
-                                                        </ul>
-                                                </details>
+                            <details>
+                                <summary class="primary-menu"> Zzp'ers </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/index.html?pos=nav_zakelijk_zzp_index">
+                                            Alles voor zzp'ers</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/openen.html?pos=nav_zakelijk_zzp_zk_rekening">
+                                            Zakelijke rekening</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/index.html?pos=nav_zakelijk_zzp_fin_lenen">
+                                            Lenen</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav_zakelijk_zzp_boek_index">
+                                            Boekhouden</a> </li>
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/producten.html">
+                                            Alle Producten</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/overzicht-artikelen.html?pos=nav_zakelijk_zzp_overzicht">
+                                            Tips voor zzp'ers</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/tools-voor-zzp.html?pos=nav_zakelijk_zzp_rekentools">
+                                            Rekentools</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html?pos=nav_zakelijk_zzp_sector">
+                                            Inzichten in uw sector </a> </li>
+                                </ul>
+                            </details>
 
-                                                <details>
-                                                        <summary class="primary-menu"> Passen & creditcards </summary>
-                                                        <ul class="secondary-menu">
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Betaalpas-aanvragen.html">Betaalpas
-                                                                                aanvragen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/creditcards/index.html">
-                                                                                Creditcard aanvragen </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/access-card/index.html">
-                                                                                Acces Card aanvragen </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Activeren/Telefonisch.html">
-                                                                                Betaalpas activeren</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Zakelijke-betaalpas-blokkeren.html">
-                                                                                Betaalpas blokkeren</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Betaalpassen/Zakelijke-betaalpas-blokkeren.html">
-                                                                                Creditcard blokkeren</a> </li>
-                                                        </ul>
-                                                </details>
+                            <details>
+                                <summary class="primary-menu"> Mkb'ers </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/mkb/index.html">
+                                            Alles voor mkb'ers</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/openen.html?pos=nav_zakelijk_mkb_zk_rekening">
+                                            Zakelijke rekening</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/index.html?pos=nav_zakelijk_mkb_fin_lenen">
+                                            Financieren</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/internationaal-ondernemen/index.html">
+                                            Internationaal ondernemen</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav_zakelijk_mkb_boek_index">
+                                            Boekhouden met ABN AMRO</a> </li>
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/mkb/producten.html">
+                                            All producten</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/index.html?pos=nav_zakelijk_mb_tipsondernemers">
+                                            Ondernemertips</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html?pos=nav_zakelijk_mkb_sector">
+                                            Sector inzichten</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/index.html?pos=nav_zakelijk_mkb_duurzaam-linklist">
+                                            Duurzaamheid</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index.html?pos=nav_zakelijk_mkb_cyber">
+                                            Cybersecurity</a> </li>
+                                </ul>
+                            </details>
 
-                                                <details>
-                                                        <summary class="primary-menu"> Financieren </summary>
-                                                        <ul class="secondary-menu">
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/index.html">
-                                                                                Alles over Financieren </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijke-lening/index.html">
-                                                                                Zakelijke lening </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijk-krediet/index.html">
-                                                                                Zakelijk krediet </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijke-hypotheek/index.html">
-                                                                                Zakelijke hypotheek</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/alle-financieringen/zakelijke-lease/index.html">
-                                                                                Zakelijke lease</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/sectoren/index.html">
-                                                                                Financieringen per sector</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/alle-financieringen/index.html">
-                                                                                Alle Financieringen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/financieringsgesprek/index.html">
-                                                                                Financieringsgesprek</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/leendoelen/index.html">Waarvoor
-                                                                                wilt u lenen?</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/ondernemerskrediet-stopt/index.html">
-                                                                                OndernemersKrediet stopt</a> </li>
-                                                                <li> <a href="https://new10.com/abnamro?nt_source=abnamro&nt_medium=referral&nt_campaign=coop&nt_content=nav_producten_financieren&_gl=1*ql1ecj*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2MzgyNy4wLjAuMA..">
-                                                                                New10</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kredietproces/index.html">
-                                                                                Kredietproces</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/gedragscode-kleinzakelijke-financiering.html">
-                                                                                Gedragscode Kleinzakelijke
-                                                                                Financieren</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/lenen-starter.html">Lenen
-                                                                                als starter</a> </li>
-                                                        </ul>
-                                                </details>
+                            <details>
+                                <summary class="primary-menu"> Medici </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/index.html?pos=nav_zakelijk_medisch_index">
+                                            Alles voor Medici</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/openen.html?pos=nav_zakelijk_mkb_zk_rekening">
+                                            Zakelijke rekening</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/medici/index.html?pos=nav_zakelijk_medisch_krediet_lease">
+                                            Financieren</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamrolease.com/nld/nl/wat-kunt-u-leasen/medische-apparatuur?cd_source=AAB-to-ABF&cd_medium=Website&cd_campaign=Referral&cd_content=topnavigatie&_gl=1*ekc1ly*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NTQ0MC4wLjAuMA..">
+                                            Lease</a> </li>
+                                    <li> <a href="https://www.abnamroverzekeringen.nl/zakelijk/verzekeringen/zorg">
+                                            Verzekeren</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/producten.html">
+                                            All producten</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/tips-voor-medici/index.html?pos=nav_zak_uwsituatie_medici_tips">
+                                            Tips voor Medici</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/ondernemingsplan/index.html?pos=nav_zakelijk_medisch_ondernemingplan">
+                                            Ondernemingsplan</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/branche-informatie/index.html?pos=nav_zakelijk_medisch_branche">
+                                            Brancherapporten</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/index?pos=nav_zakelijk_medisch_duurzaam">
+                                            Duurzaamheid</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index?pos=nav_zakelijk_medisch_cyber">
+                                            Cybersecurity</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/evenementen/index?pos=nav_zakelijk_medisch_event">
+                                            Evenementen</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/contact-medici/index.html?pos=nav_zak_uwsituatie_medici_contact">
+                                            Contact</a> </li>
+                                </ul>
+                            </details>
 
-                                                <details>
-                                                        <summary class="primary-menu"> Verzekeren </summary>
-                                                        <ul class="secondary-menu">
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/verzekeren/index.html">ABN
-                                                                                AMRO Vezekeringen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/verzekeren/index.html">
-                                                                                Ondernemersrisico's verzekeren</a> </li>
-                                                        </ul>
-                                                </details>
+                            <details>
+                                <summary class="primary-menu"> Corporates </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/corporate-banking/producten/index.html">
+                                            Producten</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/corporate-banking/sectoren/index.html">
+                                            Sectoren</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/corporate-banking/about-us/index.html">
+                                            Over ons</a> </li>
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/index.html">
+                                            Duurzaamheid</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/creditcards/index.html">
+                                            Zakelijke creditcards</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/corporates-institutionals/producten/finance-your-business/corporate-lending.html">
+                                            Financieren</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/valutamanagement.html">
+                                            Valutamagnement</a> </li>
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/index.html">
+                                            Internet Bankieren Zakelijk</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/access-online/index.html">
+                                            Acces Online</a> </li>
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index.html">
+                                            Service & contact</a> </li>
+                                </ul>
+                            </details>
 
-                                                <details>
-                                                        <summary class="primary-menu"> Internationaal </summary>
-                                                        <ul class="secondary-menu">
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/trade-finance/index.html">
-                                                                                Trade Finance </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/trade-finance/garanties/index.html">
-                                                                                Zakelijke bankgarantie</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/index.html">
-                                                                                Internationale betalingen </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/valutamanagement.html">
-                                                                                Valutamanagement</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/vreemde-valuta-rekening/index.html">
-                                                                                Vreemde Valuta rekening</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/internationaal-ondernemen/index.html">
-                                                                                Internationaal ondernemen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/valutacentrum/index.html">
-                                                                                Valutacentrum</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/international-desks/index.html">
-                                                                                Kantoren in het buitenland</a> </li>
-                                                        </ul>
-                                                </details>
+                            <details>
+                                <summary class="primary-menu"> Verenigingen </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/verenigingen-en-stichtingen/index.html?pos=nav=zakelijk=V&S">Verenigingen</a>
+                                    </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/stichting-vereniging.html?pos=nav=zakelijk=V&S">
+                                            Rekening openen</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/service-contact/gegevens-wijzigen/bestuurswijziging/index.html?pos=nav=zakelijk=V&S">
+                                            Bestuurwijziging</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav=zakelijk=V&S">
+                                            Boekhouden</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/verenigingen-en-stichtingen/sportverenigingen/index.html?pos=nav=zakelijk=V&S">Financiering
+                                            sportvereniging</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/verenigingen-en-stichtingen/producten.html">
+                                            Alle producten</a> </li>
+                                </ul>
+                            </details>
 
-                                                <details>
-                                                        <summary class="primary-menu"> Cybersecurity </summary>
-                                                        <ul class="secondary-menu">
-                                                                <li> <a href="https://www.abnamro.nl/nl/prive/abnamro/veilig-bankieren/index.html">
-                                                                                Fraude melden </a> </li>
-                                                                <li> <a href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/cyber-veilig-en-zeker/?_gl=1*1srkv6y*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDIxMC4wLjAuMA..">
-                                                                                Complete cyberbescherming</a> </li>
-                                                                <li> <a href="https://www.abnamroverzekeringen.nl/zakelijk/verzekeringen/cyber?utm_source=abnamro.nl&utm_medium=referral&utm_campaign=verzekeren&utm_content=topnavigatie">
-                                                                                Zakelijke cyberverzekering </a> </li>
-                                                                <li> <a href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/cyber-risicoscan/?_gl=1*jwwg4g*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDI0MS4wLjAuMA..">
-                                                                                Doe de cyberrisicoscan</a> </li>
-                                                                <li> <a href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/veilig-ondernemen/download-cyber-response-plan/?_gl=1*1tzcc0l*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDI1NS4wLjAuMA..">
-                                                                                Maak Cyber Response Plan</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index.html">
-                                                                                Alles over veilig zakendoen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/beveiliging/index.html">
-                                                                                Cyberveiligheid </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/media/belangrijkste_cybersecuritybedreigingen_tcm16-78700.pdf">
-                                                                                Top 10 cyberdreigingen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/cyberaanval/index.html">
-                                                                                Cuberaanvallen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/phishing/index.html">
-                                                                                Cyberdreiging phishing</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/technologie/index.html">
-                                                                                Technologie & cyber</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/index.html">
-                                                                                Ga naar alle
-                                                                                artikelen </a> </li>
-                                                        </ul>
-                                                </details>
+                            <details>
+                                <summary class="primary-menu"> Intermediars </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/intermediairs/index.html">Alles
+                                            voor intermediairs</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/alle-financieringen/zakelijke-lease/index.html">
+                                            Zakelijke lease</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijke-lening/index.html">
+                                            Zakelijke lening</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijk-krediet/index.html">
+                                            Zakelijk krediet</a> </li>
+                                    <li> <a
+                                            href="https://doorpakken.abnamro.nl/?_gl=1*lrf7kv*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NTg1NS4wLjAuMA..">Meer
+                                            dan een bank</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/tikkie-zakelijk/index.html">
+                                            Tikki voor bedrijven</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html">
+                                            Sectoren en trends</a> </li>
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/index.html">
+                                            Ondernemerstips</a> </li>
+                                    <li> <a href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/index.html">
+                                            Macro-economie</a> </li>
+                                </ul>
+                            </details>
+                    </div>
 
-                                                <details>
-                                                        <summary class="primary-menu"> De Zaak van Nu </summary>
-                                                        <ul class="secondary-menu">
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/index.html">
-                                                                                Duurzaam ondernemen</a>
-                                                                </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/index.html">
-                                                                                Social impact
-                                                                        </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/circulair.html">
-                                                                                Circulaire
-                                                                                economie</a> </li>
-                                                                <li> <a href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/vastgoed-verduurzamen/">
-                                                                                Vastgoed verduurzamen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/subsidie-expertise.html">
-                                                                                Subsidie Expertise</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/index.html">
-                                                                                Zakelijk
-                                                                                beleggen</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/coronavirus/de-zaak-vooruit.html">
-                                                                                Overzicht</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/embedded-finance/index.html">
-                                                                                Embedded
-                                                                                Finance </a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html">
-                                                                                Boekhouden met ABN AMRO</a> </li>
-                                                                <li> <a href="https://doorpakken.abnamro.nl/hulpmiddelen-en-diensten/cyber-veilig-en-zeker/?_gl=1*13q9syk*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NDYxMy4wLjAuMA..">
-                                                                                Cyber Veilig & Zeker</a> </li>
-                                                                <li> <a href="https://www.abnamro.nl/nl/zakelijk/api/index.html">
-                                                                                API's</a> </li>
-                                                        </ul>
-                                                </details>
-                                        </div>
+                    <a id="insights" href="https://www.abnamro.nl/nl/zakelijk/insights/index.html" class="button">
+                        Insights </a>
 
-
-
-                                        <a id="uw-onderneming" class="button"> Uw Onderneming </a>
-                                        <div id="onderneming-menu" class="hidden">
-
-                                                <ul>
-                                                        <details>
-                                                                <summary class="primary-menu"> Starters </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/eigen-bedrijf-starten/index.html?pos=nav_zakelijk_starter_index">
-                                                                                        Alles voor starters</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/lenen-starter.html?pos=nav_zakelijk_starter_fin_lenen">
-                                                                                        Lenen</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav_zakelijk_starter_boek_index">
-                                                                                        Boekhouden</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/eigen-bedrijf-starten/speciaal-voor-starters.html?pos=nav_zakelijk_starter_product">
-                                                                                        Alle Producten</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/bedrijf-starten.html?pos=nav_zakelijk_starter_starterstips">
-                                                                                        Tips voor starters</a> </li>
-                                                                        <li> <a href="https://doorpakken.abnamro.nl/wegwijzer-voor-starters/?state=step&index=0">
-                                                                                        Wegwijzer voor starters</a>
-                                                                        </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html?pos=nav_zakelijk_starter_sectoren">
-                                                                                        Inzichten in uw sector </a>
-                                                                        </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/index.html?pos=nav_zakelijk_starter_zk_rekening">
-                                                                                        zakelijke rekeningen</a> </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Zzp'ers </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/index.html?pos=nav_zakelijk_zzp_index">
-                                                                                        Alles voor zzp'ers</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/openen.html?pos=nav_zakelijk_zzp_zk_rekening">
-                                                                                        Zakelijke rekening</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/index.html?pos=nav_zakelijk_zzp_fin_lenen">
-                                                                                        Lenen</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav_zakelijk_zzp_boek_index">
-                                                                                        Boekhouden</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/producten.html">
-                                                                                        Alle Producten</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/overzicht-artikelen.html?pos=nav_zakelijk_zzp_overzicht">
-                                                                                        Tips voor zzp'ers</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/zzp/tools-voor-zzp.html?pos=nav_zakelijk_zzp_rekentools">
-                                                                                        Rekentools</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html?pos=nav_zakelijk_zzp_sector">
-                                                                                        Inzichten in uw sector </a>
-                                                                        </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Mkb'ers </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/mkb/index.html">
-                                                                                        Alles voor mkb'ers</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/openen.html?pos=nav_zakelijk_mkb_zk_rekening">
-                                                                                        Zakelijke rekening</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/index.html?pos=nav_zakelijk_mkb_fin_lenen">
-                                                                                        Financieren</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/internationaal-ondernemen/index.html">
-                                                                                        Internationaal ondernemen</a>
-                                                                        </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav_zakelijk_mkb_boek_index">
-                                                                                        Boekhouden met ABN AMRO</a>
-                                                                        </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/mkb/producten.html">
-                                                                                        All producten</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/index.html?pos=nav_zakelijk_mb_tipsondernemers">
-                                                                                        Ondernemertips</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html?pos=nav_zakelijk_mkb_sector">
-                                                                                        Sector inzichten</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/index.html?pos=nav_zakelijk_mkb_duurzaam-linklist">
-                                                                                        Duurzaamheid</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index.html?pos=nav_zakelijk_mkb_cyber">
-                                                                                        Cybersecurity</a> </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Medici </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/index.html?pos=nav_zakelijk_medisch_index">
-                                                                                        Alles voor Medici</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/openen.html?pos=nav_zakelijk_mkb_zk_rekening">
-                                                                                        Zakelijke rekening</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/medici/index.html?pos=nav_zakelijk_medisch_krediet_lease">
-                                                                                        Financieren</a> </li>
-                                                                        <li> <a href="https://www.abnamrolease.com/nld/nl/wat-kunt-u-leasen/medische-apparatuur?cd_source=AAB-to-ABF&cd_medium=Website&cd_campaign=Referral&cd_content=topnavigatie&_gl=1*ekc1ly*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NTQ0MC4wLjAuMA..">
-                                                                                        Lease</a> </li>
-                                                                        <li> <a href="https://www.abnamroverzekeringen.nl/zakelijk/verzekeringen/zorg">
-                                                                                        Verzekeren</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/producten.html">
-                                                                                        All producten</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/tips-voor-medici/index.html?pos=nav_zak_uwsituatie_medici_tips">
-                                                                                        Tips voor Medici</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/ondernemingsplan/index.html?pos=nav_zakelijk_medisch_ondernemingplan">
-                                                                                        Ondernemingsplan</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/branche-informatie/index.html?pos=nav_zakelijk_medisch_branche">
-                                                                                        Brancherapporten</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/index?pos=nav_zakelijk_medisch_duurzaam">
-                                                                                        Duurzaamheid</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index?pos=nav_zakelijk_medisch_cyber">
-                                                                                        Cybersecurity</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/evenementen/index?pos=nav_zakelijk_medisch_event">
-                                                                                        Evenementen</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/medici/contact-medici/index.html?pos=nav_zak_uwsituatie_medici_contact">
-                                                                                        Contact</a> </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Corporates </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/corporate-banking/producten/index.html">
-                                                                                        Producten</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/corporate-banking/sectoren/index.html">
-                                                                                        Sectoren</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/corporate-banking/about-us/index.html">
-                                                                                        Over ons</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/duurzaam-ondernemen/index.html">
-                                                                                        Duurzaamheid</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/creditcards/index.html">
-                                                                                        Zakelijke creditcards</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/corporates-institutionals/producten/finance-your-business/corporate-lending.html">
-                                                                                        Financieren</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/internationale-betalingen-valutamanagement/valutamanagement.html">
-                                                                                        Valutamagnement</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/index.html">
-                                                                                        Internet Bankieren Zakelijk</a>
-                                                                        </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/access-online/index.html">
-                                                                                        Acces Online</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index.html">
-                                                                                        Service & contact</a> </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Verenigingen </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/verenigingen-en-stichtingen/index.html?pos=nav=zakelijk=V&S">Verenigingen</a>
-                                                                        </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/zakelijke-rekening/stichting-vereniging.html?pos=nav=zakelijk=V&S">
-                                                                                        Rekening openen</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/gegevens-wijzigen/bestuurswijziging/index.html?pos=nav=zakelijk=V&S">
-                                                                                        Bestuurwijziging</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/boekhouden/index.html?pos=nav=zakelijk=V&S">
-                                                                                        Boekhouden</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/verenigingen-en-stichtingen/sportverenigingen/index.html?pos=nav=zakelijk=V&S">Financiering
-                                                                                        sportvereniging</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/verenigingen-en-stichtingen/producten.html">
-                                                                                        Alle producten</a> </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Intermediars </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/speciaal-voor/intermediairs/index.html">Alles
-                                                                                        voor intermediairs</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/alle-financieringen/zakelijke-lease/index.html">
-                                                                                        Zakelijke lease</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijke-lening/index.html">
-                                                                                        Zakelijke lening</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/financieren/zakelijk-krediet/index.html">
-                                                                                        Zakelijk krediet</a> </li>
-                                                                        <li> <a href="https://doorpakken.abnamro.nl/?_gl=1*lrf7kv*_ga*MTAyMTY5MTc3OC4xNzM2MTU5OTA1*_ga_H38ZZ0N44L*MTczNjM2MDY3MC45LjEuMTczNjM2NTg1NS4wLjAuMA..">Meer
-                                                                                        dan een bank</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/betalen/tikkie-zakelijk/index.html">
-                                                                                        Tikki voor bedrijven</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/sectoren-en-trends/index.html">
-                                                                                        Sectoren en trends</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/index.html">
-                                                                                        Ondernemerstips</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/ondernemerstips/index.html">
-                                                                                        Macro-economie</a> </li>
-                                                                </ul>
-                                                        </details>
-                                        </div>
-
-                                        <a id="insights" href="https://www.abnamro.nl/nl/zakelijk/insights/index.html"
-                                                class="button">
-                                                Insights </a>
-
-                                        <a id="app-en-internet-bankieren" class="button"> App en Internet Bankieren </a>
-                                        <div id="app-menu" class="hidden">
-                                                <ul>
-                                                        <details>
-                                                                <summary class="primary-menu"> ABN AMRO app </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/abn-amro-app/index.html?pos=nav_topnav_zakelijk_im_mb_index">
-                                                                                        Alles over de ABN AMRO app</a>
-                                                                        </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/abn-amro-app/abn-amro-app-activeren.html">
-                                                                                        Activeren van de app </a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/abn-amro-app/inloggenmetqr.html?pos=nav_topnav_zakelijk_im_mb_inloggenmetqr">
-                                                                                        Inloggen met de app </a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Internet-Bankieren-Zakelijk-en-ABN-AMRO-app/ABN-AMRO-app.html?pos=nav_topnav_zakelijk_im_mb_hulpbijapp">
-                                                                                        Hulp bij de app </a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/prive/internet-en-mobiel/abn-amro-app/veilig-mobiel-bankieren.html?pos=nav_topnav_zakelijk_im_mb_veiligmobielbankieren">
-                                                                                        Veilig bankieren met de app</a>
-                                                                        </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Internet Bankieren
-                                                                </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/index.html?pos=nav_topnav_zakelijk_im_ib_index">
-                                                                                        Alles over Internet
-                                                                                        Bankieren</a> </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Acces Online </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/producten/access-online/index.html?pos=nav_topnav_zakelijk_im_aol_index">Alles
-                                                                                        over Acces Online</a> </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Hulp bij online bankieren
-                                                                </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Internet-Bankieren-Zakelijk-en-ABN-AMRO-app/ABN-AMRO-app.html?pos=nav_topnav_zakelijk_im_hulp_app_pathfinder">Hulp
-                                                                                        bij de ABN AMRO app</a> </li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Internet-Bankieren-Zakelijk-en-ABN-AMRO-app/Internet-Bankieren-Zakelijk.html?pos=nav_topnav_zakelijk_im_hulp_ib_pathfinder">
-                                                                                        Hulp bij Internet Bankieren</a>
-                                                                        </li>
-                                                                </ul>
-                                                        </details>
-
-                                                        <details>
-                                                                <summary class="primary-menu"> Veilig bankieren
-                                                                </summary>
-                                                                <ul class="secondary-menu">
-                                                                        <li> <a href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index.html?pos=nav_topnav_zakelijk_im_vb_index">Alles
-                                                                                        over veilig bankieren</a></li>
-                                                                        <li> <a href="https://www.abnamro.nl/nl/prive/abnamro/veilig-bankieren/fraude-melden.html">Fraude
-                                                                                        melden</a></li>
-                                                                </ul>
-                                                        </details>
-                                                </ul>
-                                        </div>
-
-                                        <a id="service-contact"
-                                                href="https://www.abnamro.nl/nl/zakelijk/service-contact/index.html"
-                                                class="button"> Service en Contact </a>
-                        </ul>
-                        </li>
-                </nav>
-        </header>
-
-
-        <main>
-                <h1> Toegankelijkheidsverklaring </h1>
-                <p>Bankieren op een manier die bij jou past</p>
-                <p>Bij ABN AMRO vinden we het belangrijk dat al onze klanten,
-                        ongeacht hun mogelijkheden, toegang hebben tot onze digitale diensten.
-                        Daarom werken we voortdurend aan het verbeteren van de toegankelijkheid van onze website,
-                        mobiele apps en andere online diensten.</p>
-
-                <div class="article-container">
-                        <section>
-                                <article id="article-1">
-                                        <h2> Toegankelijkheidsverklaring </h2>
-                                        <p> ABN AMRO streeft ernaar om onze digitale diensten toegankelijk te maken voor
-                                                alle gebruikers,
-                                                inclusief mensen met een beperking. Wij geloven dat iedereen
-                                                gelijkwaardig toegang moet hebben
-                                                tot onze online platforms en streven ernaar om de
-                                                gebruiksvriendelijkheid en toegankelijkheid
-                                                van
-                                                onze website te verbeteren.</p>
-                                </article>
-
-                                <article id="article-2">
-                                        <h2>Onze Toegankelijkheidsinspanningen</h2>
-                                        <p> Wij volgen de richtlijnen van de Web Content Accessibility Guidelines (WCAG)
-                                                2.1 op niveau AA,
-                                                zoals aanbevolen door de World Wide Web Consortium (W3C). Dit helpt ons
-                                                om ervoor te zorgen dat
-                                                de website toegankelijk is voor mensen met verschillende soorten
-                                                beperkingen, inclusief visuele,
-                                                auditieve, motorische en cognitieve beperkingen.
-                                                Wat we doen om de toegankelijkheid te verbeteren:
-                                                Het aanbieden van tekstalternatieven voor visuele content.
-                                                Zorgen voor voldoende contrast tussen tekst en achtergrond.
-                                                Het bieden van navigatiemogelijkheden via het toetsenbord voor
-                                                gebruikers die geen muis kunnen
-                                                gebruiken.
-                                                Het ontwikkelen van duidelijke en consistente interface-elementen en
-                                                navigatie.
-                                                Het aanbieden van transcripties en ondertitels voor multimedia-inhoud.
-                                        </p>
-                                </article>
-
-                                <article id="article-3">
-                                        <h2>Toegankelijkheidsdoelen</h2>
-                                        <p> Naleving WCAG 2.1: Volgen van WCAG 2.1 richtlijnen voor toegankelijkheid
-                                                (niveau AA).
-                                                Compatibiliteit met schermlezers: Zorgen voor correcte werking met
-                                                schermlezers en hulpmiddelen.
-                                                Visuele toegankelijkheid: Voldoende contrast, leesbare lettertypen en
-                                                aanpasbare
-                                                weergave-opties.
-                                                Multimedia: Ondertitels en transcripties voor video's en audiomateriaal.
-                                                Eenvoudige navigatie: Duidelijke menu's, zoekfunctie en consistente
-                                                navigatie.
-                                                Cognitieve toegankelijkheid: Helder taalgebruik, visuele hulpmiddelen en
-                                                stap-voor-stap
-                                                begeleiding.
-                                                Doorlopende verbetering: Regelmatige toegankelijkheidstests en
-                                                gebruikersfeedback om te blijven
-                                                verbeteren.</p>
-                                </article>
-
-                                <article id="article-4">
-                                        <h2>Feedback en Verbeteringen</h2>
-                                        <p> We begrijpen dat er altijd ruimte is voor verbetering.
-                                                Als u problemen ondervindt bij het gebruik van onze website of als
-                                                u suggesties heeft voor verdere verbetering van
-                                                de toegankelijkheid,nodigen wij u uit om contact met ons op te nemen.
-                                                Uw feedback is van groot belang om ervoor te zorgen dat we een digitale
-                                                ervaring bieden die voor iedereen toegankelijk is.
-                                                Contactgegevens: Voor vragen of opmerkingen over toegankelijkheid
-                                                kunt u contact met ons opnemen via [contactinformatie].</p>
-                                </article>
-                </div>
-
-
-                <section class="main-bottom">
-                        <h3>Wat vindt u van deze informatie ?</h3>
-
-                        <div class="goed-slecht">
-                                <a href="#goed"> <img src="./ABN-assets /goed.png" alt="goed"></a>
-                                <a href="#slecht"> <img src="./ABN-assets /slecht.png" alt="slecht"></a>
-                        </div>
-                </section>
-        </main>
-
-        <footer>
-                <section class="footer-top">
-                        <h3>Hulp nodig?</h3>
-                        <p>Bekijk het overzicht van alles wat je zelf kunt doen. Heb je een vraag waar je zelf niet
-                                uitkomt? Chat of
-                                bel ons dan.</p>
-
-                        <div class="service-button">
-                                <img src="./ABN-assets /support.svg" alt="neem contact op">
-                                <a href="https://www.abnamro.nl/nl/prive/service-en-contact/index.html">Naar Service &
-                                        Contact</a>
-                        </div>
-                </section>
-
-                <section class="footer-bottom">
+                    <a id="app-en-internet-bankieren" class="button"> App en Internet Bankieren </a>
+                    <div id="app-menu" class="hidden">
                         <ul>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/index.html">Over ABN AMRO</a></li>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/klacht-indienen/index.html">Klacht
-                                                indienen</a>
-                                </li>
-                                <li><a href="https://www.werkenbijabnamro.nl/">Werken bij ABN AMRO</a></li>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/toegankelijkheid/index.html">Toegankelijkheid</a>
-                                </li>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/omgangsregels.html">Omgangsregels</a>
-                                </li>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/duurzaamheid/index.html">Duurzaamheid</a>
-                                </li>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/veilig-bankieren/index.html">Veiligheid</a>
-                                </li>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/privacy/index.html">Privacy en
-                                                cookies</a></li>
-                                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/disclaimer.html">Disclaimer</a>
-                                </li>
+                            <details>
+                                <summary class="primary-menu"> ABN AMRO app </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/abn-amro-app/index.html?pos=nav_topnav_zakelijk_im_mb_index">
+                                            Alles over de ABN AMRO app</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/abn-amro-app/abn-amro-app-activeren.html">
+                                            Activeren van de app </a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/abn-amro-app/inloggenmetqr.html?pos=nav_topnav_zakelijk_im_mb_inloggenmetqr">
+                                            Inloggen met de app </a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Internet-Bankieren-Zakelijk-en-ABN-AMRO-app/ABN-AMRO-app.html?pos=nav_topnav_zakelijk_im_mb_hulpbijapp">
+                                            Hulp bij de app </a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/prive/internet-en-mobiel/abn-amro-app/veilig-mobiel-bankieren.html?pos=nav_topnav_zakelijk_im_mb_veiligmobielbankieren">
+                                            Veilig bankieren met de app</a> </li>
+                                </ul>
+                            </details>
+
+                            <details>
+                                <summary class="primary-menu"> Internet Bankieren </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/internet-bankieren/index.html?pos=nav_topnav_zakelijk_im_ib_index">
+                                            Alles over Internet Bankieren</a> </li>
+                                </ul>
+                            </details>
+
+                            <details>
+                                <summary class="primary-menu"> Acces Online </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/producten/access-online/index.html?pos=nav_topnav_zakelijk_im_aol_index">Alles
+                                            over Acces Online</a> </li>
+                                </ul>
+                            </details>
+
+                            <details>
+                                <summary class="primary-menu"> Hulp bij online bankieren </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Internet-Bankieren-Zakelijk-en-ABN-AMRO-app/ABN-AMRO-app.html?pos=nav_topnav_zakelijk_im_hulp_app_pathfinder">Hulp
+                                            bij de ABN AMRO app</a> </li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/service-contact/index/path-detail/Internet-Bankieren-Zakelijk-en-ABN-AMRO-app/Internet-Bankieren-Zakelijk.html?pos=nav_topnav_zakelijk_im_hulp_ib_pathfinder">
+                                            Hulp bij Internet Bankieren</a> </li>
+                                </ul>
+                            </details>
+
+                            <details>
+                                <summary class="primary-menu"> Veilig bankieren </summary>
+                                <ul class="secondary-menu">
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/zakelijk/insights/cybersecurity/index.html?pos=nav_topnav_zakelijk_im_vb_index">Alles
+                                            over veilig bankieren</a></li>
+                                    <li> <a
+                                            href="https://www.abnamro.nl/nl/prive/abnamro/veilig-bankieren/fraude-melden.html">Fraude
+                                            melden</a></li>
+                                </ul>
+                            </details>
                         </ul>
-                </section>
-                <section class="footer-bottom-icons">
-                        <a href="https://www.facebook.com/abnamro"> <img src="./ABN-assets/facebook.svg" alt="Volg ons op Facebook"> </a>
-                        <a href="https://x.com/abnamro"> <img src="./ABN-assets/twitter.svg" alt="Volg ons op Twitter"></a>
-                        <a href="https://www.linkedin.com/company/abn-amro/"> <img src="./ABN-assets/linkedin.svg" alt="Volg ons op LinkedIn"></a>
-                        <a href="https://www.youtube.com/abnamro"> <img src="./ABN-assets/youtube.svg" alt="Volg ons op YouTube"></a>
-                    </section>
-                    
-                <div class="web-versie">
-                        <p>© 2024 ABN AMRO</p>
-                </div>
-        </footer>
+                    </div>
+
+                    <a id="service-contact" href="https://www.abnamro.nl/nl/zakelijk/service-contact/index.html"
+                        class="button"> Service en Contact </a>
+            </ul>
+            </li>
+        </nav>
+    </header>
 
 
-        <button id="feedback-button">Geef Feedback</button>
+    <main>
+        <h1> Toegankelijkheidsverklaring </h1>
+        <p>Bankieren op een manier die bij jou past</p>
+        <p>Bij ABN AMRO vinden we het belangrijk dat al onze klanten,
+            ongeacht hun mogelijkheden, toegang hebben tot onze digitale diensten.
+            Daarom werken we voortdurend aan het verbeteren van de toegankelijkheid van onze website,
+            mobiele apps en andere online diensten.</p>
 
-        <div id="feedback-form" class="hidden">
-                <form id="feedback-form-content">
+        <div class="article-container">
+            <section>
+                <article id="article-1">
+                    <h2> Toegankelijkheidsverklaring </h2>
+                    <p> ABN AMRO streeft ernaar om onze digitale diensten toegankelijk te maken voor alle gebruikers,
+                        inclusief mensen met een beperking. Wij geloven dat iedereen gelijkwaardig toegang moet hebben
+                        tot onze online platforms en streven ernaar om de gebruiksvriendelijkheid en toegankelijkheid
+                        van
+                        onze website te verbeteren.</p>
+                </article>
+
+                <article id="article-2">
+                    <h2>Onze Toegankelijkheidsinspanningen</h2>
+                    <p> Wij volgen de richtlijnen van de Web Content Accessibility Guidelines (WCAG) 2.1 op niveau AA,
+                        zoals aanbevolen door de World Wide Web Consortium (W3C). Dit helpt ons om ervoor te zorgen dat
+                        de website toegankelijk is voor mensen met verschillende soorten beperkingen, inclusief visuele,
+                        auditieve, motorische en cognitieve beperkingen.
+                        Wat we doen om de toegankelijkheid te verbeteren:
+                        Het aanbieden van tekstalternatieven voor visuele content.
+                        Zorgen voor voldoende contrast tussen tekst en achtergrond.
+                        Het bieden van navigatiemogelijkheden via het toetsenbord voor gebruikers die geen muis kunnen
+                        gebruiken.
+                        Het ontwikkelen van duidelijke en consistente interface-elementen en navigatie.
+                        Het aanbieden van transcripties en ondertitels voor multimedia-inhoud.</p>
+                </article>
+
+                <article id="article-3">
+                    <h2>Toegankelijkheidsdoelen</h2>
+                    <p> Naleving WCAG 2.1: Volgen van WCAG 2.1 richtlijnen voor toegankelijkheid (niveau AA).
+                        Compatibiliteit met schermlezers: Zorgen voor correcte werking met schermlezers en hulpmiddelen.
+                        Visuele toegankelijkheid: Voldoende contrast, leesbare lettertypen en aanpasbare
+                        weergave-opties.
+                        Multimedia: Ondertitels en transcripties voor video's en audiomateriaal.
+                        Eenvoudige navigatie: Duidelijke menu's, zoekfunctie en consistente navigatie.
+                        Cognitieve toegankelijkheid: Helder taalgebruik, visuele hulpmiddelen en stap-voor-stap
+                        begeleiding.
+                        Doorlopende verbetering: Regelmatige toegankelijkheidstests en gebruikersfeedback om te blijven
+                        verbeteren.</p>
+                </article>
+
+                <article id="article-4">
+                    <h2>Feedback en Verbeteringen</h2>
+                    <p> We begrijpen dat er altijd ruimte is voor verbetering.
+                        Als u problemen ondervindt bij het gebruik van onze website of als
+                        u suggesties heeft voor verdere verbetering van
+                        de toegankelijkheid,nodigen wij u uit om contact met ons op te nemen.
+                        Uw feedback is van groot belang om ervoor te zorgen dat we een digitale
+                        ervaring bieden die voor iedereen toegankelijk is.
+                        Contactgegevens: Voor vragen of opmerkingen over toegankelijkheid
+                        kunt u contact met ons opnemen via [contactinformatie].</p>
+                </article>
+        </div>
+
+
+        <section class="main-bottom">
+            <h3>Wat vindt u van deze informatie ?</h3>
+
+            <div class="goed-slecht">
+                <a href="#goed"> <img src="./ABN-assets /goed.png" alt="goed"></a>
+                <a href="#slecht"> <img src="./ABN-assets /slecht.png" alt="slecht"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-top">
+            <h3>Hulp nodig?</h3>
+            <p>Bekijk het overzicht van alles wat je zelf kunt doen. Heb je een vraag waar je zelf niet uitkomt? Chat of
+                bel ons dan.</p>
+
+            <div class="service-button">
+                <img src="./ABN-assets /support.svg" alt="neem contact op">
+                <a href="https://www.abnamro.nl/nl/prive/service-en-contact/index.html">Naar Service & Contact</a>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <ul>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/index.html">Over ABN AMRO</a></li>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/klacht-indienen/index.html">Klacht indienen</a>
+                </li>
+                <li><a href="https://www.werkenbijabnamro.nl/">Werken bij ABN AMRO</a></li>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/toegankelijkheid/index.html">Toegankelijkheid</a>
+                </li>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/omgangsregels.html">Omgangsregels</a></li>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/duurzaamheid/index.html">Duurzaamheid</a></li>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/veilig-bankieren/index.html">Veiligheid</a></li>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/privacy/index.html">Privacy en cookies</a></li>
+                <li><a href="https://www.abnamro.nl/nl/prive/abnamro/disclaimer.html">Disclaimer</a></li>
+        </ul> 
+</section> 
+<section class="footer-bottom-icons">
+                <a href="https://www.facebook.com/abnamro">
+                         <img src="./ABN-assets/facebook.svg" alt="Volg ons op Facebook"> </a>
+                <a href="https://x.com/abnamro"> 
+                        <img src="./ABN-assets/twitter.svg" alt="Volg ons op Twitter"></a>
+                <a href="https://www.linkedin.com/company/abn-amro/"> 
+                        <img src="./ABN-assets/linkedin.svg" alt="Volg ons op LinkedIn"></a>
+                <a href="https://www.youtube.com/abnamro">
+                         <img src="./ABN-assets/youtube.svg" alt="Volg ons op YouTube"></a>
+                
+                </section> <div class="web-versie"> <p>© 2024 ABN AMRO</p> </div> </footer>
+                <button id="feedback-button">Geef Feedback</button>
+                
+                <div id="feedback-form" class="hidden"> <form id="feedback-form-content"> 
                         <h4>Met uw tips en suggesties verbeteren wij de website.</h4>
-
-                        <p>Wat vindt u van uw bezoek?</p>
-                        <p>Wat vindt u van uw bezoek?</p>
-        <div class="star-rating">
-            <input type="radio" id="star1" name="rating" value="1" aria-label="1 ster">
-            <label for="star1" class="star">&#9733;</label>
-
-            <input type="radio" id="star2" name="rating" value="2" aria-label="2 sterren">
-            <label for="star2" class="star">&#9733;</label>
-
-            <input type="radio" id="star3" name="rating" value="3" aria-label="3 sterren">
-            <label for="star3" class="star">&#9733;</label>
-
-            <input type="radio" id="star4" name="rating" value="4" aria-label="4 sterren">
-            <label for="star4" class="star">&#9733;</label>
-
-            <input type="radio" id="star5" name="rating" value="5" aria-label="5 sterren">
-            <label for="star5" class="star">&#9733;</label>
-        </div>
-
-
-        <p>Wat wilt u met ons delen?</p>
-        <select id="rating" name="rating" required aria-label="Kies type feedback">
-            <option value="1">Een klacht</option>
-            <option value="2">Een idee</option>
-            <option value="3">Een compliment</option>
-            <option value="4">Iets anders</option>
-        </select>
-        <p>Kunt u hier meer over vertellen?</p>
-        <textarea id="feedback" name="feedback" rows="4" required aria-label="Vul uw feedback in"></textarea>
-
-        <div class="warning">
-            <p><strong>Belangrijk:</strong> Vul geen persoonlijke gegevens in, zoals uw naam of pincode. We gebruiken uw feedback voor het verbeteren van onze service. Hulp nodig? Neem gerust contact met ons op.</p>
-        </div>
-        <button type="submit" id="submit-button" aria-label="Verstuur feedback">Verstuur</button>
-    </form>
-    <button id="close-form" aria-label="Sluit formulier">X</button>
-</div>
-
-<script src="main.js"></script>
-</body>
-
-</html>
+                        <p>Wat vindt u van uw bezoek?</p> <div class="star-rating"> 
+                
+                <input type="radio" id="star1" name="rating" value="1" aria-label="1 ster">
+                <label for="star1" class="star">★</label>
+                
+                <input type="radio" id="star2" name="rating" value="2" aria-label="2 sterren">
+                <label for="star2" class="star">★</label>
+                
+                <input type="radio" id="star3" name="rating" value="3" aria-label="3 sterren">
+                <label for="star3" class="star">★</label>
+                
+                <input type="radio" id="star4" name="rating" value="4" aria-label="4 sterren">
+                <label for="star4" class="star">★</label>
+                
+                <input type="radio" id="star5" name="rating" value="5" aria-label="5 sterren">
+                <label for="star5" class="star">★</label>
+                
+                </div> 
+                <p>Wat wilt u met ons delen?</p>
+                 <select id="rating" name="rating" required aria-label="Kies type feedback">
+                         <option value="1">Een klacht</option>
+                          <option value="2">Een idee</option>
+                           <option value="3">Een compliment</option>
+                            <option value="4">Iets anders</option>
+                        </select> 
+                        
+                <p>Kunt u hier meer over vertellen?</p> 
+                <textarea id="feedback" name="feedback" rows="4" required aria-label="Vul uw feedback in"></textarea> 
+                <div class="warning"> 
+                        <p><strong>Belangrijk:</strong> 
+                                Vul geen persoonlijke gegevens in, zoals uw naam of pincode. We gebruiken uw feedback voor het verbeteren van onze service. Hulp nodig? Neem gerust contact met ons op.</p> 
+                        </div>
+                <button type="submit" id="submit-button" aria-label="Verstuur feedback">Verstuur</button>
+                
+                </form>
+                <button id="close-form" aria-label="Sluit formulier">X</button>
+                
+                </div> <script src="main.js"></script> </body> </html>

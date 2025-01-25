@@ -1,45 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Feedback-functionaliteit
+  // Feedbackknop 
   const feedbackButton = document.querySelector('#feedback-button');
   const feedbackForm = document.querySelector('#feedback-form');
   const closeForm = document.querySelector('#close-form');
 
   if (feedbackButton && feedbackForm && closeForm) {
-    // Open feedbackformulier
+    // Stap 1: Open feedbackformulier
     feedbackButton.addEventListener('click', (event) => {
       event.stopPropagation();
       feedbackForm.classList.remove('hidden');
     });
 
-    // Sluit feedbackformulier
+    // Stap 2: Sluit feedbackformulier met knop
     closeForm.addEventListener('click', (event) => {
       event.stopPropagation();
       feedbackForm.classList.add('hidden');
     });
 
-    // Sluit feedbackformulier bij klikken buiten het formulier
+    // Stap 3: Sluit feedbackformulier bij klikken buiten het formulier
     document.addEventListener('click', (event) => {
       if (!feedbackForm.contains(event.target) && !feedbackButton.contains(event.target)) {
         feedbackForm.classList.add('hidden');
       }
     });
 
-    // Voeg een alert toe bij het versturen van het formulier
+    // Stap 4: Voeg een alert toe bij het versturen van het formulier
     feedbackForm.addEventListener('submit', (event) => {
-      event.preventDefault(); // Voorkom standaard versturen
-      
-      // Sluit het formulier
-      feedbackForm.classList.add('hidden');
+      event.preventDefault(); 
+      feedbackForm.classList.add('hidden'); 
 
-      // Wacht even tot het formulier sluit, dan toon de alert
+      // zet een timer voor de alert
       setTimeout(() => {
         alert('Bedankt voor jouw feedback!');
-      }, 300); // Wacht 300ms om de sluiting van het formulier visueel af te ronden
+      }, 300);
 
       feedbackForm.reset(); 
     });
   }
-}
+
+  // Menu-functie
 
   // Stap 1: Selecteer de knoppen en containers voor het menu
   const buttons = {
@@ -47,10 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     onderneming: document.getElementById('uw-onderneming'),
     app: document.getElementById('app-en-internet-bankieren')
   };
+
   const containers = {
     productenMenu: document.getElementById('producten-menu'),
     ondernemingMenu: document.getElementById('onderneming-menu'),
-    appMenu: document.getElementById('app-menu') 
+    appMenu: document.getElementById('app-menu')
+  };
 
   // Stap 2: Controleer of de benodigde elementen bestaan
   if (
@@ -65,11 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Stap 3: Toggle functionaliteit voor menu's
+  // Stap 3: Functie om menu's te toggelen
   const toggleMenu = (button, container, otherContainers) => {
-    // Toon of verberg het menu bij het klikken op de knop
     button.addEventListener('click', (event) => {
-      event.stopPropagation(); // Voorkomt dat het document-event wordt geactiveerd
+      event.stopPropagation(); 
 
       // Sluit alle andere menu's
       otherContainers.forEach(otherContainer => {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.classList.toggle('visible');
     });
 
-    // Sluit het menu als er buiten het menu wordt geklikt
+    // Sluit het menu als er buiten wordt geklikt
     document.addEventListener('click', (event) => {
       if (!container.contains(event.target) && event.target !== button) {
         container.classList.remove('visible');
@@ -106,18 +106,17 @@ document.addEventListener('DOMContentLoaded', () => {
   setupDetailsToggle(containers.ondernemingMenu);
   setupDetailsToggle(containers.appMenu);
 
-  // Stap 6: Voeg de toggle-functionaliteit toe voor alle menu's
+  // Stap 6: Voeg de toggle-functie toe voor alle menu's
   toggleMenu(buttons.products, containers.productenMenu, [
-    containers.ondernemingMenu, 
+    containers.ondernemingMenu,
     containers.appMenu
   ]);
   toggleMenu(buttons.onderneming, containers.ondernemingMenu, [
-    containers.productenMenu, 
+    containers.productenMenu,
     containers.appMenu
   ]);
   toggleMenu(buttons.app, containers.appMenu, [
-    containers.productenMenu, 
+    containers.productenMenu,
     containers.ondernemingMenu
   ]);
 });
-
