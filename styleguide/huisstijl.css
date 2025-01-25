@@ -83,6 +83,14 @@ a {
     }
 }
 
+nav { 
+font-size: var(--font-size-text);
+background-color: var(--primary-section-color);
+color: var(--menu-link-text-color);
+}
+
+
+
 /* SIJL ARTICLE */
 article {
     background-color: var(--background-color-article);
@@ -100,9 +108,20 @@ button {
     cursor: pointer;
 }
 
+
 button:hover {
     background-color: var(--secondary-button-hover-color);
 }
+
+.button:hover {
+    background-color: var(--primary-button-color);
+    text-decoration: none;
+    }
+
+.primary-menu {
+    font-family: var(--font-family-titles);
+}
+
 
 /* LOGO */
 .logo {
@@ -181,9 +200,10 @@ button:hover {
     height: 30px;
 }
 
-.web-versie p { 
+.web-versie { 
         font-size: var(--font-size-s);
         color: var(--footer-text-color);
+      
     }
 
 #feedback-button {
