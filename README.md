@@ -1,5 +1,7 @@
 <h1>ABN AMRO Toegankelijkheid Verklaring Pagina</h1>
 
+<img src="./readme-assets/intro.png" height="350">
+
 <p>Dit project is een toegankelijkheidsverklaring webpagina ontworpen in de huisstijl van ABN AMRO. De webpagina is mobile-first gebouwd met twee breakpoints op min-width 800px en min-width 1000px, en bevat meerdere interactieve elementen zoals een feedbackknop en een tweede navigatiemenu met hover-effecten.</p>
 
 <h2>Beschrijving</h2>
