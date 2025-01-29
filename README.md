@@ -1,49 +1,69 @@
-<h1>ABN AMRO Toegankelijkheid Verklaring Pagina</h1>
+<h1>ABN AMRO Toegankelijkheidverklaring Pagina</h1>
 
 <img src="./readme-assets/intro.png" height="350">
 
-<p>Dit project is een toegankelijkheidsverklaring webpagina ontworpen in de huisstijl van ABN AMRO. De webpagina is mobile-first gebouwd met twee breakpoints op min-width 800px en min-width 1000px, en bevat meerdere interactieve elementen zoals een feedbackknop en een tweede navigatiemenu met hover-effecten.</p>
+<p>Dit project is een opdracht vanuit de ABN AMRO.Voor dit project heb ik een toegankelijkheidverklaring pagina gemaakt waarin Het doel was om een technisch toegankelijke pagina te bouwen die volledig aansluit bij de bestaande huisstijl en voldoet aan de WCAG-richtlijnen.</p>
 
-<h2>Beschrijving</h2>
-<p>De webpagina is een toegankelijkheidsverklaring waarbij gebruikers informatie kunnen vinden over de toegankelijkheid van de ABN AMRO website. Daarnaast biedt de pagina een feedbackknop waarmee gebruikers een formulier kunnen invullen om feedback te geven.</p>
+<h2>Opdracht beschrijving</h2>
 
-<h3>Belangrijkste functies:</h3>
-<p>Secundair menu met hover-indicatie: Als je met de muis over een menu-item gaat, verschijnt er een pijltje om duidelijk te maken welk item geselecteerd is.
-Feedbackknop: Bij het klikken op de feedbackknop verschijnt er een formulier. Gebruikers kunnen dit formulier invullen en versturen of het formulier sluiten door op een kruisje te klikken.
-De website is volledig responsive en ontworpen met een mobile-first aanpak. De belangrijkste interacties en ontwerpen zijn geoptimaliseerd voor gebruiksvriendelijkheid, inclusief verbeteringen gebaseerd op gebruikerstesten.</p>
+**Het probleem**
+ABN AMRO wil laten zien dat hun website toegankelijk is voor iedereen, inclusief mensen met een beperking. Hiervoor is een duidelijke en gebruiksvriendelijke toegankelijkheidsverklaring nodig die voldoet aan de officiële toegankelijkheidsregels (WCAG-richtlijnen) en past binnen de al bestaande ABN AMRO huisstijl.
+
+**De oplossing**
+
+De oplossing is een webpagina die:
+
+*Voldoet aan de WCAG-richtlijnen, zodat deze toegankelijk is voor iedereen.
+*Duidelijk en overzichtelijk is, zodat de informatie makkelijk te begrijpen is.
+*Past bij de bestaande huisstijl van ABN AMRO, met gebruik van hun kleuren, lettertypes en design.
+
+
+<h2>Pagina Beschrijving</h2>
+<p>De webpagina is een toegankelijkheidsverklaring waarbij gebruikers informatie kunnen vinden over de toegankelijkheid van de ABN AMRO website. Daarnaast biedt de pagina een feedbackknop waarmee gebruikers een formulier kunnen invullen om feedback te geven en heeft de pagina een uitgebreide dropdown-menu met een duidelijke hover-effect</p>
 
 <h2>Responsive Design</h2>
-<p>De webpagina past zich aan verschillende schermgroottes aan met behulp van een mobile-first aanpak en de volgende breakpoints:</p>
+<p>De webpagina is responsice en  past zich aan verschillende schermgroottes  met behulp van een mobile-first aanpak en de volgende breakpoints:</p>
 
-<p>Mobiel (tot 800px): Compact ontwerp met focus op leesbaarheid en eenvoudig navigeren.
-Tablet (800px - 999px): De layout wordt iets breder, en elementen worden overzichtelijker gepresenteerd.
-Desktop (1000px en hoger): Volledig uitgebreide layout met extra ruimte voor inhoud.
-Screenshots per breakpoint:
-(Screenshots van de mobiele, tablet- en desktopversie toevoegen.)</p>
+**Mobile version**
 
-<p> Mobile version </p>
+<p>Mobiel (tot 800px): Compact ontwerp met focus op leesbaarheid en eenvoudig navigeren.</p>
+
  <img src="./readme-assets/mobile.png" height="350">
- <p> Tablet version</p>
+ 
+ **Tablet version**
+ 
+ <p>Tablet (800px - 999px): De layout wordt iets breder, en elementen worden overzichtelijker gepresenteerd.</p>
+
   <img src="./readme-assets/tablet.png" height="350">
-   <p> desktop version </p>
+  
+ **desktop version**
+ <p> Desktop (1000px en hoger): Volledig uitgebreide layout met extra ruimte voor inhoud.</p>
+ 
    <img src="./readme-assets/desktop.png" height="350">
    
-<h2>Ontwerpkeuzes</h2>
+<h2>Specifieke Ontwerpkeuzes/ interactie </h2>
 
-<h3> Interacties </h3>
-<p>Secundair menu met hover-indicatie
-Waarom: Om duidelijk te maken welk menu-item geselecteerd is, wordt er een visuele indicatie gegeven in de vorm van een pijltje dat naar voren schuift bij hover.
-Feedback & feedforward: De visuele indicatie biedt feedback aan de gebruiker dat een item actief is. Het pijltje dat naar voren beweegt geeft een vorm van feedforward doordat het aangeeft dat dit menu-item aanklikbaar is.
-Feedbackknop en formulier
-Waarom: De feedbackknop is ontworpen zodat gebruikers eenvoudig opmerkingen kunnen insturen. Het formulier kan verzonden worden, en gebruikers kunnen het formulier sluiten door op een kruisje te klikken.
-Verbeteringen uit gebruikerstests:
-Feedbackknop zichtbaarheid: De knop stond onderaan en was niet direct zichtbaar. Dit is aangepast door de knop hoger te plaatsen en een opvallendere kleur binnen de huisstijl (bijvoorbeeld geel) te gebruiken.
-Sterrenbeoordeling: De sterrenbeoordeling ging eerst van rechts naar links, wat verwarrend was. Dit is aangepast naar een logische volgorde van links naar rechts.
-Formulier sluiten: Het sluiten van het formulier was niet duidelijk. Nu is er een meer zichtbare sluitknop toegevoegd.
-Bevestiging na verzenden: Een melding verschijnt nu nadat het formulier succesvol is verzonden, zodat gebruikers weten dat hun feedback is ontvangen.
+**Feedbackknop**
 
-<h3>Ontwerpschetsen</h3>
+Interactie: feedbackknop 
+Als je op de knop klikt, verschijnt er een feedbackformulier waarin gebruikers makkelijk hun mening kunnen geven.
 
+Ontwerpkeuze:
+Kleur: De knop is geel gemaakt in plaats van wit, omdat uit de user test bleek dat een witte knop niet goed opviel en gebruikers moeite hadden deze te vinden. Geel, als opvallende kleur binnen de ABN AMRO-huisstijl, zorgt ervoor dat de knop beter zichtbaar is en direct opvalt.
+
+Ik heb bij de interacties in het feedbackformulier gebruikgemaakt van de feedback- en feedforwardprincipes:
+
+**Feedforward:**
+* De knop “Geef feedback” en de sterwaardering laten direct zien wat je kunt doen. De sterretjes lichten op wanneer je eroverheen beweegt, wat aangeeft dat je ze kunt selecteren.
+* De "Verstuur" knop maakt duidelijk dat je de feedback kunt indienen.
+* Het kruisje in de hoek laat zien dat je het formulier kunt sluiten.
+
+**Feedback:**
+* Wanneer je een sterwaardering geeft, lichten de sterren op en blijft je keuze zichtbaar.
+* Als je op “Verstuur” klikt, verschijnt een bevestigingsbericht met “Bedankt voor je feedback”, zodat je weet dat de actie is verwerkt.
+* Als je op het kruisje drukt, sluit het formulier direct, wat laat zien dat de actie succesvol is.
+
+Door deze principes toe te passen, wordt de interactie intuïtief en gebruiksvriendelijk.
 
 <h3>Usertest</h3>
 <p>Gebruikerstesten bevindingen</p>
@@ -62,20 +82,17 @@ Formulier sluiten was niet duidelijk → meer prominente sluitknop..</p>
 <p>Feedbackknop was niet logisch geplaatst → knop hoger geplaatst en beter zichtbaar gemaakt.
 Scenario was niet helder → scenario verduidelijkt.</p>
 
-
 <h2>Kenmerken <h2>
 <h3>HTML</h3>
-<p>Semantische structuur: Gebruik van header, nav, section, en footer voor toegankelijkheid en overzichtelijkheid.
-Dynamisch gegenereerde elementen zoals het feedbackformulier.</p>
+* Semantische structuur: Gebruik van header, nav, section, en footer voor toegankelijkheid en overzichtelijkheid. Goed structuur zorgt ervoor dat screenreaders duidelijk men met beperking kan navigeren door de website
+* Ik heb gebruik gemaakt van alt elementen bij img en aria-labels als het hoognodig was zodat screenreaders aangeven waar men zich bevind op de website 
 <h3>CSS</h3>
-<p>Mobile-first design: Gebruik van flexbox en media queries voor een responsieve layout.
-Huisstijl van ABN AMRO toegepast: kleurenpalet, lettertypes en marges zijn consistent.</p>
+* Mobile-first design: Gebruik van flexbox en media queries voor een responsieve layout Waardoor de website zoch aanpast op verschillende schermgroottes 
+* Huisstijl van ABN AMRO toegepast: kleurenpalet, lettertypes en marges zijn consistent.
+  
 <h3>JavaScript</h3>
-<p>Interactie voor de feedbackknop: Het formulier verschijnt en verdwijnt dynamisch bij klikken.
-Sterrenbeoordeling: Logica toegevoegd voor interactie met de beoordelingssterren.
-Bevestigingsmelding: Feedback over het succesvol versturen van het formulier.
-Codeconventies
-Geoptimaliseerde en gestructureerde code met duidelijke classnamen en consistent gebruik van variabelen.</p>
+* Interactie voor de feedbackknop: Het formulier verschijnt en verdwijnt dynamisch bij klikken.
+* gebruik gemaakt van duidelijke classnames en gewerkt met stappenplan om javascript code zo kort en simpel mogelijk te houden dit zorg voor een toegankelijke website doordat er weinig tot geen complicaties kunnen komen door een zo kort mogekijke code te behouden 
 
 <p> Bekijk mijn site met de link hieronder!</p>
 
